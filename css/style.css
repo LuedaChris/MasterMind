@@ -561,6 +561,23 @@ html, body {
   margin-top: 4px;
 }
 
+/* Quiz-Performance farblich hervorheben */
+.stat-perfect .stat-value {
+  color: var(--success);
+}
+
+.stat-perfect .stat-label {
+  color: var(--success);
+}
+
+.stat-weak .stat-value {
+  color: var(--error);
+}
+
+.stat-weak .stat-label {
+  color: var(--error);
+}
+
 .unit-summary-divider {
   width: 60px;
   height: 2px;

@@ -96,6 +96,7 @@
         nextUnitTitle: nextUnit ? (nextUnit.unitTitle || '') : '',
         // Zähle Quiz-Screens in dieser Unit für die Zusammenfassung
         quizCount: screens.filter(function (s) { return s.type === 'quiz'; }).length,
+        quizScreens: screens.filter(function (s) { return s.type === 'quiz'; }),
         screenCount: screens.length
       });
       AppState.unitMap.push({
@@ -225,12 +226,35 @@
     unitName.textContent = screen.unitTitle;
     wrapper.appendChild(unitName);
 
+    // Quiz-Performance berechnen: Wie viele Fragen richtig beantwortet?
+    var totalQuestions = 0;
+    var correctQuestions = 0;
+    var quizScreens = screen.quizScreens || [];
+    for (var qs = 0; qs < quizScreens.length; qs++) {
+      var quizScreen = quizScreens[qs];
+      var questions = quizScreen.questions || [];
+      var savedAnswers = AppState.answers[quizScreen.id] || {};
+      for (var qq = 0; qq < questions.length; qq++) {
+        totalQuestions++;
+        var userAnswer = savedAnswers[questions[qq].questionId] || [];
+        if (checkAnswer(questions[qq], userAnswer)) {
+          correctQuestions++;
+        }
+      }
+    }
+
     // Statistik
     var stats = document.createElement('div');
     stats.className = 'unit-summary-stats';
+
+    var quizResultClass = '';
+    if (totalQuestions > 0) {
+      quizResultClass = (correctQuestions === totalQuestions) ? ' stat-perfect' : (correctQuestions >= totalQuestions / 2) ? '' : ' stat-weak';
+    }
+
     stats.innerHTML =
       '<div class="stat-item"><span class="stat-value">' + screen.screenCount + '</span><span class="stat-label">Abschnitte</span></div>' +
-      '<div class="stat-item"><span class="stat-value">' + screen.quizCount + '</span><span class="stat-label">Quiz-Fragen</span></div>';
+      '<div class="stat-item' + quizResultClass + '"><span class="stat-value">' + correctQuestions + ' / ' + totalQuestions + '</span><span class="stat-label">Quizfragen richtig</span></div>';
     wrapper.appendChild(stats);
 
     // Trennlinie
