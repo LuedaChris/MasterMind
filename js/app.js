@@ -63,6 +63,8 @@
 
   // Nimmt die verschachtelte Struktur (Module > Units > Screens)
   // und macht daraus eine einfache, nummerierte Liste.
+  // Fügt zwischen den Units automatisch einen Übergangs-Screen ein,
+  // damit sich jede Unit wie ein abgeschlossener Teil anfühlt.
   function flattenScreens() {
     AppState.screens = [];
     AppState.unitMap = [];
@@ -75,9 +77,34 @@
         AppState.screens.push(screens[j]);
         AppState.unitMap.push({
           unitTitle: unit.unitTitle || '',
-          unitId: unit.unitId || ''
+          unitId: unit.unitId || '',
+          screenInUnit: j + 1,
+          totalInUnit: screens.length
         });
       }
+
+      // Nach jeder Unit (außer der letzten) einen Übergangs-Screen einfügen
+      var isLastUnit = (i === units.length - 1);
+      var nextUnit = !isLastUnit ? units[i + 1] : null;
+
+      AppState.screens.push({
+        id: 'unit-summary-' + unit.unitId,
+        type: 'unit_summary',
+        unitTitle: unit.unitTitle || '',
+        unitId: unit.unitId || '',
+        isLastUnit: isLastUnit,
+        nextUnitTitle: nextUnit ? (nextUnit.unitTitle || '') : '',
+        // Zähle Quiz-Screens in dieser Unit für die Zusammenfassung
+        quizCount: screens.filter(function (s) { return s.type === 'quiz'; }).length,
+        screenCount: screens.length
+      });
+      AppState.unitMap.push({
+        unitTitle: unit.unitTitle || '',
+        unitId: unit.unitId || '',
+        screenInUnit: screens.length + 1,
+        totalInUnit: screens.length + 1,
+        isSummary: true
+      });
     }
   }
 
@@ -117,6 +144,9 @@
         break;
       case 'quiz':
         renderQuizScreen(screen);
+        break;
+      case 'unit_summary':
+        renderUnitSummary(screen);
         break;
       default:
         // Unbekannter Typ? Nicht abstürzen, sondern Hinweis zeigen
@@ -167,6 +197,65 @@
     }
 
     DOM.content.appendChild(card);
+  }
+
+  // --- Unit-Übergangs-Screen: Abschluss einer Lerneinheit ---
+  function renderUnitSummary(screen) {
+    // Unit-Titel oben entfernen (der Summary-Screen hat sein eigenes Layout)
+    var existingLabel = DOM.content.querySelector('.unit-title');
+    if (existingLabel) existingLabel.remove();
+
+    var wrapper = document.createElement('div');
+    wrapper.className = 'unit-summary-screen';
+
+    // Abschluss-Häkchen
+    var checkmark = document.createElement('div');
+    checkmark.className = 'unit-summary-checkmark';
+    checkmark.innerHTML = '&#10003;';
+    wrapper.appendChild(checkmark);
+
+    // Titel
+    var h2 = document.createElement('h2');
+    h2.textContent = 'Lerneinheit abgeschlossen!';
+    wrapper.appendChild(h2);
+
+    // Welche Unit wurde abgeschlossen
+    var unitName = document.createElement('p');
+    unitName.className = 'unit-summary-name';
+    unitName.textContent = screen.unitTitle;
+    wrapper.appendChild(unitName);
+
+    // Statistik
+    var stats = document.createElement('div');
+    stats.className = 'unit-summary-stats';
+    stats.innerHTML =
+      '<div class="stat-item"><span class="stat-value">' + screen.screenCount + '</span><span class="stat-label">Abschnitte</span></div>' +
+      '<div class="stat-item"><span class="stat-value">' + screen.quizCount + '</span><span class="stat-label">Quiz-Fragen</span></div>';
+    wrapper.appendChild(stats);
+
+    // Trennlinie
+    var divider = document.createElement('div');
+    divider.className = 'unit-summary-divider';
+    wrapper.appendChild(divider);
+
+    // Was kommt als Nächstes?
+    if (!screen.isLastUnit && screen.nextUnitTitle) {
+      var nextHint = document.createElement('div');
+      nextHint.className = 'unit-summary-next';
+      nextHint.innerHTML =
+        '<span class="next-label">Weiter geht\u2019s mit:</span>' +
+        '<span class="next-title">' + screen.nextUnitTitle + '</span>';
+      wrapper.appendChild(nextHint);
+    } else {
+      var finalHint = document.createElement('div');
+      finalHint.className = 'unit-summary-next';
+      finalHint.innerHTML =
+        '<span class="next-label">Das war die letzte Einheit dieses Moduls.</span>' +
+        '<span class="next-title">Klicke auf \u201eAbschlie\u00dfen\u201c, um das Modul zu beenden!</span>';
+      wrapper.appendChild(finalHint);
+    }
+
+    DOM.content.appendChild(wrapper);
   }
 
   // --- Quiz-Screen: Fragen mit verschiedenen Typen ---
@@ -554,7 +643,16 @@
     var percent = (current / total) * 100;
 
     DOM.progressFill.style.width = percent + '%';
-    DOM.counter.textContent = current + ' / ' + total;
+
+    // Zeige Unit-Kontext im Zähler (z.B. "Unit 1.2 · 3/6")
+    var unitInfo = AppState.unitMap[AppState.currentIndex];
+    if (unitInfo && unitInfo.unitId && !unitInfo.isSummary) {
+      DOM.counter.textContent = 'Unit ' + unitInfo.unitId + ' \u00b7 ' + unitInfo.screenInUnit + '/' + unitInfo.totalInUnit;
+    } else if (unitInfo && unitInfo.isSummary) {
+      DOM.counter.textContent = 'Unit ' + unitInfo.unitId + ' \u2013 Abschluss';
+    } else {
+      DOM.counter.textContent = current + ' / ' + total;
+    }
   }
 
   function updateNavButtons() {
@@ -573,6 +671,8 @@
     // Text des Weiter-Buttons anpassen
     if (AppState.currentIndex >= AppState.screens.length - 1) {
       DOM.btnNext.textContent = 'Abschließen';
+    } else if (screen.type === 'unit_summary' && !screen.isLastUnit) {
+      DOM.btnNext.textContent = 'Nächste Einheit starten';
     } else {
       DOM.btnNext.textContent = 'Weiter';
     }
