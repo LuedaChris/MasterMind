@@ -1,0 +1,529 @@
+/* ============================================
+   MasterMind – Dark Metal Design System
+   ============================================
+   Alle Farben und Abstände werden hier oben als
+   "Variablen" definiert. So kann man das gesamte
+   Farbschema an einer Stelle ändern.
+   ============================================ */
+
+:root {
+  /* Hintergrundfarben (sehr dunkel) */
+  --bg-primary: #080a0c;
+  --bg-secondary: #131519;
+  --bg-card: #1a1d23;
+  --bg-input: #0d0f12;
+
+  /* Akzentfarbe: leuchtendes Neon-Cyan */
+  --accent: #00f7ff;
+  --accent-glow: rgba(0, 247, 255, 0.3);
+  --accent-dim: rgba(0, 247, 255, 0.1);
+
+  /* Feedback-Farben */
+  --success: #00ff88;
+  --success-glow: rgba(0, 255, 136, 0.3);
+  --error: #ff3355;
+  --error-glow: rgba(255, 51, 85, 0.3);
+
+  /* Textfarben */
+  --text-primary: #e0e0e0;
+  --text-secondary: #888;
+  --text-muted: #555;
+
+  /* Ränder und Ecken */
+  --border: #2a2d33;
+  --border-light: #3a3d44;
+  --radius: 8px;
+  --radius-sm: 4px;
+
+  /* Schatten: "erhaben" (Buttons) und "eingelassen" (Inputs) */
+  --shadow-raised: 0 2px 8px rgba(0, 0, 0, 0.5),
+                   inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  --shadow-inset: inset 0 2px 6px rgba(0, 0, 0, 0.6),
+                  inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+
+  /* Metallischer Verlauf (simuliert Lichtreflexion) */
+  --metal-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04) 0%,
+    transparent 50%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+/* ============================================
+   Grundlegendes Layout
+   ============================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================
+   Fortschrittsbalken (ganz oben)
+   ============================================ */
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--bg-secondary);
+  z-index: 100;
+}
+
+#progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent-glow);
+  transition: width 0.4s ease;
+}
+
+/* ============================================
+   Hauptinhalt (Mitte)
+   ============================================ */
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#screen-content {
+  flex: 1;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 20px 100px;
+  /* 100px unten = Platz für die fixierte Navigation */
+  animation: fadeIn 0.3s ease;
+}
+
+/* Einblend-Animation für neue Screens */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================
+   Karten (Info-Screens und Quiz-Screens)
+   ============================================ */
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-raised);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Metallischer Glanz-Effekt über der Karte */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--metal-gradient);
+  pointer-events: none;
+}
+
+.card h2 {
+  color: var(--accent);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+}
+
+.card h3 {
+  color: var(--text-primary);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 20px 0 10px;
+}
+
+.card p {
+  margin-bottom: 12px;
+  color: var(--text-primary);
+  line-height: 1.7;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================
+   Unit-Titel (über den Karten)
+   ============================================ */
+
+.unit-title {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+
+.screen-title {
+  color: var(--accent);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* ============================================
+   Quiz-spezifische Styles
+   ============================================ */
+
+.question-block {
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.question-block:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.question-text {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+/* --- Radio-Buttons und Checkboxen (Custom) --- */
+
+.option-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-inset);
+  position: relative;
+}
+
+.option-label:hover {
+  border-color: var(--border-light);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Nativen Radio/Checkbox verstecken */
+.option-label input[type="radio"],
+.option-label input[type="checkbox"] {
+  display: none;
+}
+
+/* Custom-Anzeiger (Kreis für Radio, Quadrat für Checkbox) */
+.option-indicator {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-light);
+  border-radius: 50%;
+  margin-top: 2px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.option-label input[type="checkbox"] + .option-indicator {
+  border-radius: var(--radius-sm);
+}
+
+/* Wenn ausgewählt: Cyan-Füllung */
+.option-label input:checked + .option-indicator {
+  border-color: var(--accent);
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent-glow);
+}
+
+/* Kleiner Punkt/Haken im ausgewählten Indikator */
+.option-label input:checked + .option-indicator::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background: var(--bg-primary);
+  border-radius: 50%;
+}
+
+.option-label input[type="checkbox"]:checked + .option-indicator::after {
+  width: 6px;
+  height: 10px;
+  background: transparent;
+  border: 2px solid var(--bg-primary);
+  border-top: none;
+  border-left: none;
+  border-radius: 0;
+  transform: translate(-50%, -60%) rotate(45deg);
+}
+
+.option-text {
+  flex: 1;
+  line-height: 1.5;
+}
+
+/* Ausgewählte Option hervorheben */
+.option-label.selected {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+}
+
+/* --- Freitext-Eingabe --- */
+
+.free-text-input {
+  width: 100%;
+  min-height: 80px;
+  padding: 14px 16px;
+  background: var(--bg-input);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-inset);
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  resize: vertical;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.free-text-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: var(--shadow-inset), 0 0 0 2px var(--accent-glow);
+}
+
+.free-text-input::placeholder {
+  color: var(--text-muted);
+}
+
+/* --- Quiz-Auswertung --- */
+
+.question-block.correct .option-label.selected {
+  border-color: var(--success);
+  background: rgba(0, 255, 136, 0.08);
+}
+
+.question-block.correct .option-indicator-result {
+  color: var(--success);
+}
+
+.question-block.incorrect .option-label.selected {
+  border-color: var(--error);
+  background: rgba(255, 51, 85, 0.08);
+}
+
+.question-block.incorrect .option-indicator-result {
+  color: var(--error);
+}
+
+/* Richtige Antwort hervorheben (nach Auswertung) */
+.option-label.correct-answer {
+  border-color: var(--success);
+  background: rgba(0, 255, 136, 0.05);
+}
+
+.explanation {
+  margin-top: 12px;
+  padding: 12px 16px;
+  background: rgba(0, 247, 255, 0.05);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  animation: fadeIn 0.3s ease;
+}
+
+/* --- Auswertungs-Button --- */
+
+.btn-submit {
+  display: block;
+  width: 100%;
+  padding: 14px 24px;
+  margin-top: 20px;
+  background: var(--bg-card);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-raised);
+  background-image: var(--metal-gradient);
+}
+
+.btn-submit:hover {
+  background: rgba(0, 247, 255, 0.1);
+  box-shadow: var(--shadow-raised), 0 0 20px var(--accent-glow);
+}
+
+.btn-submit:active {
+  box-shadow: var(--shadow-inset);
+  transform: translateY(1px);
+}
+
+.btn-submit:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ============================================
+   Ergebnis-Banner (nach Quiz-Auswertung)
+   ============================================ */
+
+.result-banner {
+  padding: 16px 20px;
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.result-banner.all-correct {
+  background: rgba(0, 255, 136, 0.1);
+  border: 1px solid var(--success);
+  color: var(--success);
+}
+
+.result-banner.has-errors {
+  background: rgba(255, 51, 85, 0.1);
+  border: 1px solid var(--error);
+  color: var(--error);
+}
+
+/* ============================================
+   Navigation (fixiert am unteren Rand)
+   ============================================ */
+
+#nav-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  z-index: 100;
+}
+
+#screen-counter {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.nav-btn {
+  padding: 10px 24px;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-raised);
+  background-image: var(--metal-gradient);
+}
+
+.nav-btn:hover:not(:disabled) {
+  border-color: var(--border-light);
+}
+
+.nav-btn:active:not(:disabled) {
+  box-shadow: var(--shadow-inset);
+  transform: translateY(1px);
+}
+
+.nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.nav-btn-primary {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.nav-btn-primary:hover:not(:disabled) {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-raised), 0 0 15px var(--accent-glow);
+}
+
+/* ============================================
+   Abschluss-Screen
+   ============================================ */
+
+.completion-screen {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.completion-screen h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.completion-screen p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+/* ============================================
+   Responsive Anpassungen (Smartphones)
+   ============================================ */
+
+@media (max-width: 600px) {
+  #screen-content {
+    padding: 16px 14px 90px;
+  }
+
+  .card {
+    padding: 20px 16px;
+  }
+
+  .nav-btn {
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
+
+  .screen-title {
+    font-size: 1.15rem;
+  }
+}
