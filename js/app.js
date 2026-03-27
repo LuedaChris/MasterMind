@@ -867,6 +867,31 @@
   DOM.btnBack.addEventListener('click', goBack);
   DOM.btnNext.addEventListener('click', goNext);
 
+  // Keyboard-Navigation
+  document.addEventListener('keydown', function (e) {
+    // Nicht auslösen, wenn der Nutzer gerade tippt (Textarea)
+    if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
+
+    switch (e.key) {
+      case 'ArrowRight':
+      case 'Enter':
+        e.preventDefault();
+        // Bei Quiz: Enter löst "Antworten prüfen" aus, falls noch nicht ausgewertet
+        var screen = AppState.screens[AppState.currentIndex];
+        if (e.key === 'Enter' && screen.type === 'quiz' && !AppState.submitted[screen.id]) {
+          var submitBtn = DOM.content.querySelector('[data-action="submit-quiz"]');
+          if (submitBtn) submitBtn.click();
+        } else {
+          DOM.btnNext.click();
+        }
+        break;
+      case 'ArrowLeft':
+        e.preventDefault();
+        DOM.btnBack.click();
+        break;
+    }
+  });
+
   // ===========================================
   // 8. APP STARTEN
   // ===========================================
