@@ -351,6 +351,104 @@
           "content": "<p>Du beherrschst nun die K\u00f6nigsdisziplin der Kommunikation: <strong>Pace, Pace, Lead</strong>. Du holst Menschen in ihrer Realit\u00e4t ab und f\u00fchrst sie sanft in einen positiveren Zustand.</p><p>Doch was passiert, wenn man sich in einem hitzigen Gespr\u00e4ch v\u00f6llig verliert und der Rapport pl\u00f6tzlich abrei\u00dft? Genau das schauen wir uns in der n\u00e4chsten und letzten Einheit (2.5) dieses Moduls an: <strong>Rapport-Bruch und Reparatur!</strong></p>"
         }
       ]
+    },
+    {
+      "unitId": "2.5",
+      "unitTitle": "Micro-Unit 2.5 \u2013 Rapport-Bruch und Reparatur: Wenn die Verbindung rei\u00dft",
+      "screens": [
+        {
+          "id": "2.5.1",
+          "type": "info",
+          "title": "Der Mismatch \u2013 Wenn die Br\u00fccke wackelt",
+          "content": "<p>Du hast es fast geschafft! Zum Abschluss von Modul 2 widmen wir uns der Realit\u00e4t: Nicht jedes Gespr\u00e4ch l\u00e4uft perfekt ab. Manchmal rei\u00dft die unbewusste Verbindung pl\u00f6tzlich ab. Heute lernst du, wie du diesen Widerstand erkennst, den Rapport reparierst und wie du den Rapport-Bruch sogar gezielt als Werkzeug einsetzen kannst.</p><p>Wie merkst du, dass der Rapport gebrochen ist? Das Zauberwort im NLP hei\u00dft <strong>Mismatching</strong> (Nicht-\u00dcbereinstimmung).</p><p>Du bemerkst einen Rapport-Bruch oft an pl\u00f6tzlichen, unbewussten Ver\u00e4nderungen bei deinem Gegen\u00fcber. Die Person lehnt sich abrupt zur\u00fcck, verschr\u00e4nkt die Arme, der Blickkontakt bricht ab oder die Stimme wird pl\u00f6tzlich deutlich k\u00e4lter und formeller.</p><p>Das wichtigste Zeichen aber ist: <strong>Die Person folgt dir beim Leading (F\u00fchren) nicht mehr.</strong> Wenn du versuchst, das Tempo aus einem hitzigen Gespr\u00e4ch zu nehmen, der andere aber weiterhin laut und schnell spricht, ist die Br\u00fccke eingest\u00fcrzt.</p>"
+        },
+        {
+          "id": "2.5.2",
+          "type": "quiz",
+          "title": "Zuordnungsaufgabe: Rapport oder Mismatch?",
+          "content": "<p>Szenario: Du sprichst mit einem Kunden \u00fcber einen neuen Vertrag. Ordne die folgenden Situationen richtig zu.</p>",
+          "questions": [
+            {
+              "questionId": "q-2.5.2-a",
+              "questionType": "single_choice",
+              "questionText": "\u201eEr nickt im gleichen Takt wie du und lehnt sich ebenfalls entspannt \u00fcber den Tisch.\u201c \u2013 Was ist das?",
+              "options": [
+                {"id": "rapport", "text": "Rapport (Gleichklang/Pacing)"},
+                {"id": "mismatch", "text": "Mismatch (Rapport-Bruch)"}
+              ],
+              "correctMatch": ["rapport"],
+              "explanation": "Richtig! Gleiches Nicken und \u00e4hnliche K\u00f6rperhaltung sind klare Zeichen f\u00fcr Rapport."
+            },
+            {
+              "questionId": "q-2.5.2-b",
+              "questionType": "single_choice",
+              "questionText": "\u201eAls du den Preis nennst, atmet er h\u00f6rbar ein, rutscht auf dem Stuhl nach hinten und schaut aus dem Fenster.\u201c \u2013 Was ist das?",
+              "options": [
+                {"id": "rapport", "text": "Rapport (Gleichklang/Pacing)"},
+                {"id": "mismatch", "text": "Mismatch (Rapport-Bruch)"}
+              ],
+              "correctMatch": ["mismatch"],
+              "explanation": "Richtig! Die feine Beobachtung (Kalibrierung) aus Unit 2.2 hilft dir genau jetzt, diesen Bruch in Millisekunden zu erkennen."
+            }
+          ]
+        },
+        {
+          "id": "2.5.3",
+          "type": "info",
+          "title": "Zur\u00fcck auf Los \u2013 Die Reparatur",
+          "content": "<p>Was tust du, wenn der Rapport gebrochen ist? Die meisten Menschen machen jetzt den Fehler, inhaltlich weiter zu argumentieren. Sie reden noch mehr, noch lauter und noch schneller. Doch erinnere dich an unsere NLP-Regel: <strong>Ohne Rapport verpufft jedes Argument!</strong></p><p>Ein Rapport-Bruch ist kein pers\u00f6nlicher Angriff, sondern (wie du in Modul 1 gelernt hast) lediglich wertvolles Feedback. Es bedeutet: Deine aktuelle Strategie funktioniert nicht.</p><p>Die L\u00f6sung ist denkbar einfach: <strong>H\u00f6r auf zu f\u00fchren (Leading) und gehe sofort zur\u00fcck zum Pacing.</strong> Passe dich der neuen K\u00f6rperhaltung und Tonalit\u00e4t deines Gegen\u00fcbers an. Wenn der Kunde sich zur\u00fccklehnt, lehne dich ebenfalls ein St\u00fcck zur\u00fcck. Hole ihn erst wieder in seiner neuen Realit\u00e4t ab, bevor du inhaltlich weitermachst.</p>"
+        },
+        {
+          "id": "2.5.4",
+          "type": "quiz",
+          "title": "Quiz: Rapport reparieren",
+          "questions": [
+            {
+              "questionId": "q-2.5.4-a",
+              "questionType": "single_choice",
+              "questionText": "Wahr oder Falsch? Wenn du einen Rapport-Bruch bemerkst, solltest du das inhaltliche Thema sofort mit logischen Argumenten untermauern, um die Zweifel des anderen auszur\u00e4umen.",
+              "options": [
+                {"id": "wahr", "text": "Wahr"},
+                {"id": "falsch", "text": "Falsch"}
+              ],
+              "correctMatch": ["falsch"],
+              "explanation": "Falsch! Inhaltliche Argumente bringen bei einem Rapport-Bruch gar nichts. Stoppe den Inhalt, gehe einen Schritt zur\u00fcck und baue erst \u00fcber Pacing (Spiegeln) die emotionale Br\u00fccke wieder auf."
+            }
+          ]
+        },
+        {
+          "id": "2.5.5",
+          "type": "info",
+          "title": "Die dunkle Seite \u2013 Gezieltes Mismatching",
+          "content": "<p>Zum Abschluss noch ein NLP-Geheimnis: Rapport zu brechen, ist nicht immer etwas Schlechtes. Manchmal ist es extrem n\u00fctzlich!</p><p>Stell dir vor, du bist auf einer Party oder in einem Meeting und jemand h\u00e4lt einen endlosen Monolog. Du kommst einfach nicht zu Wort und m\u00f6chtest das Gespr\u00e4ch h\u00f6flich beenden.</p><p>Wenn du unbewusst im Pacing bist (z. B. nickst und ihn ansiehst), ermutigst du ihn weiterzureden. Nutze hier <strong>gezieltes Mismatching</strong>: Brich den Rapport absichtlich! Schau demonstrativ auf die Uhr, dreh deinen K\u00f6rper leicht zur Seite, ver\u00e4ndere deine Atmung und stoppe das Nicken.</p><p>Das Unterbewusstsein des Redners wird diesen Rapport-Bruch sofort registrieren. Er wird unbewusst irritiert sein, den Faden verlieren oder eine Pause machen \u2013 und das ist dein Moment, das Gespr\u00e4ch souver\u00e4n zu beenden.</p>"
+        },
+        {
+          "id": "2.5.6",
+          "type": "quiz",
+          "title": "Quiz: Der Endlos-Redner",
+          "content": "<p>Eine Kollegin steht an deinem Schreibtisch und erz\u00e4hlt dir seit 15 Minuten private Geschichten, obwohl du dringend arbeiten musst.</p>",
+          "questions": [
+            {
+              "questionId": "q-2.5.6-a",
+              "questionType": "single_choice",
+              "questionText": "Wie setzt du Mismatching ein?",
+              "options": [
+                {"id": "a", "text": "Du sagst ihr lautstark, dass sie endlich still sein soll."},
+                {"id": "b", "text": "Du nickst weiterhin verst\u00e4ndnisvoll und hoffst, dass sie von selbst aufh\u00f6rt."},
+                {"id": "c", "text": "Du brichst den nonverbalen Gleichklang: Du wendest deinen Blick auf den Bildschirm, greifst zur Maus und ver\u00e4nderst deine K\u00f6rperhaltung weg von ihr."}
+              ],
+              "correctMatch": ["c"],
+              "explanation": "Exakt! Durch dieses nonverbale Mismatching entziehst du dem Gespr\u00e4ch die emotionale Basis. Die Kollegin wird den Redefluss ganz von selbst stoppen, ohne dass du unh\u00f6flich werden musst."
+            }
+          ]
+        },
+        {
+          "id": "2.5.7",
+          "type": "info",
+          "title": "Zusammenfassung Modul 2",
+          "content": "<p><strong>Herzlichen Gl\u00fcckwunsch! Du hast Modul 2 abgeschlossen.</strong></p><p>Du besitzt nun die F\u00e4higkeit, andere messerscharf zu beobachten (<strong>Kalibrieren</strong>), unbewusstes Vertrauen aufzubauen (<strong>Pacing</strong>), Gespr\u00e4che sanft zu lenken (<strong>Leading</strong>) und Verbindungen bei Bedarf zu reparieren oder gezielt zu trennen (<strong>Mismatching</strong>).</p><p>Du hast nun das wichtigste Werkzeug f\u00fcr exzellente Kommunikation in der Hand!</p>"
+        }
+      ]
     }
   ]
 }
