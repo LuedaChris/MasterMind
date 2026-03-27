@@ -38,6 +38,46 @@
   };
 
   // ===========================================
+  // 1b. PERSISTENZ – Fortschritt in localStorage
+  // ===========================================
+
+  var STORAGE_KEY = 'mastermind_progress';
+
+  function saveProgress() {
+    try {
+      var data = {
+        moduleId: AppState.moduleData ? AppState.moduleData.moduleId : null,
+        currentIndex: AppState.currentIndex,
+        answers: AppState.answers,
+        submitted: AppState.submitted
+      };
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    } catch (e) {
+      // localStorage nicht verfügbar – kein Problem
+    }
+  }
+
+  function loadProgress() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return null;
+      var data = JSON.parse(raw);
+      // Nur laden, wenn das gleiche Modul
+      if (data.moduleId && AppState.moduleData &&
+          data.moduleId === AppState.moduleData.moduleId) {
+        return data;
+      }
+    } catch (e) {
+      // Korrupte Daten → ignorieren
+    }
+    return null;
+  }
+
+  function clearProgress() {
+    try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
+  }
+
+  // ===========================================
   // 2. INITIALISIERUNG – App starten
   // ===========================================
 
@@ -52,8 +92,15 @@
       // Das macht die Navigation einfacher: Screen 0, 1, 2, 3, ...
       flattenScreens();
 
-      // Ersten Screen anzeigen
-      renderScreen(0);
+      // Gespeicherten Fortschritt laden (falls vorhanden)
+      var saved = loadProgress();
+      if (saved) {
+        AppState.answers = saved.answers || {};
+        AppState.submitted = saved.submitted || {};
+        renderScreen(saved.currentIndex || 0);
+      } else {
+        renderScreen(0);
+      }
     } catch (error) {
       DOM.content.innerHTML =
         '<div class="card"><h2>Fehler beim Laden</h2>' +
@@ -178,6 +225,7 @@
     // Fortschrittsbalken, Zähler und Buttons aktualisieren
     updateProgress();
     updateNavButtons();
+    saveProgress();
 
     // Nach oben scrollen
     window.scrollTo(0, 0);
@@ -604,8 +652,9 @@
     var banner = createResultBanner(screen);
     DOM.content.insertBefore(banner, DOM.content.querySelector('.card'));
 
-    // "Weiter"-Button aktivieren
+    // "Weiter"-Button aktivieren und Fortschritt speichern
     updateNavButtons();
+    saveProgress();
   }
 
   // Prüft ob eine einzelne Antwort korrekt ist
@@ -719,6 +768,9 @@
     DOM.counter.textContent = '';
     DOM.btnNext.disabled = true;
     DOM.btnBack.disabled = false;
+
+    // Fortschritt zurücksetzen (Modul ist fertig)
+    clearProgress();
   }
 
   // ===========================================
