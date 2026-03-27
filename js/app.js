@@ -69,7 +69,21 @@
     AppState.screens = [];
     AppState.unitMap = [];
 
-    const units = AppState.moduleData.units || [];
+    var mod = AppState.moduleData;
+    var units = mod.units || [];
+
+    // Modul-Intro als allerersten Screen einfügen
+    AppState.screens.push({
+      id: 'module-intro',
+      type: 'module_intro',
+      title: mod.title || '',
+      description: mod.description || '',
+      unitCount: units.length,
+      totalScreens: units.reduce(function (sum, u) { return sum + (u.screens || []).length; }, 0),
+      units: units.map(function (u) { return { unitId: u.unitId, unitTitle: u.unitTitle }; })
+    });
+    AppState.unitMap.push({ unitTitle: '', unitId: '', isIntro: true });
+
     for (let i = 0; i < units.length; i++) {
       const unit = units[i];
       const screens = unit.screens || [];
@@ -150,6 +164,9 @@
       case 'unit_summary':
         renderUnitSummary(screen);
         break;
+      case 'module_intro':
+        renderModuleIntro(screen);
+        break;
       default:
         // Unbekannter Typ? Nicht abstürzen, sondern Hinweis zeigen
         var fallback = document.createElement('div');
@@ -164,6 +181,52 @@
 
     // Nach oben scrollen
     window.scrollTo(0, 0);
+  }
+
+  // --- Modul-Intro: Willkommens-Screen mit Übersicht ---
+  function renderModuleIntro(screen) {
+    // Unit-Titel oben entfernen (Intro hat eigenes Layout)
+    var existingLabel = DOM.content.querySelector('.unit-title');
+    if (existingLabel) existingLabel.remove();
+
+    var wrapper = document.createElement('div');
+    wrapper.className = 'module-intro-screen';
+
+    var h1 = document.createElement('h1');
+    h1.className = 'module-intro-title';
+    h1.textContent = screen.title;
+    wrapper.appendChild(h1);
+
+    if (screen.description) {
+      var desc = document.createElement('p');
+      desc.className = 'module-intro-desc';
+      desc.textContent = screen.description;
+      wrapper.appendChild(desc);
+    }
+
+    // Modul-Stats
+    var stats = document.createElement('div');
+    stats.className = 'module-intro-stats';
+    stats.innerHTML =
+      '<div class="stat-item"><span class="stat-value">' + screen.unitCount + '</span><span class="stat-label">Lerneinheiten</span></div>' +
+      '<div class="stat-item"><span class="stat-value">' + screen.totalScreens + '</span><span class="stat-label">Abschnitte</span></div>';
+    wrapper.appendChild(stats);
+
+    // Unit-Liste
+    var unitList = document.createElement('div');
+    unitList.className = 'module-intro-units';
+    var units = screen.units || [];
+    for (var i = 0; i < units.length; i++) {
+      var item = document.createElement('div');
+      item.className = 'module-intro-unit-item';
+      item.innerHTML =
+        '<span class="unit-item-number">' + units[i].unitId + '</span>' +
+        '<span class="unit-item-title">' + units[i].unitTitle + '</span>';
+      unitList.appendChild(item);
+    }
+    wrapper.appendChild(unitList);
+
+    DOM.content.appendChild(wrapper);
   }
 
   // --- Info-Screen: Nur Text und optional ein Bild ---
@@ -671,7 +734,9 @@
 
     // Zeige Unit-Kontext im Zähler (z.B. "Unit 1.2 · 3/6")
     var unitInfo = AppState.unitMap[AppState.currentIndex];
-    if (unitInfo && unitInfo.unitId && !unitInfo.isSummary) {
+    if (unitInfo && unitInfo.isIntro) {
+      DOM.counter.textContent = '\u00dcbersicht';
+    } else if (unitInfo && unitInfo.unitId && !unitInfo.isSummary) {
       DOM.counter.textContent = 'Unit ' + unitInfo.unitId + ' \u00b7 ' + unitInfo.screenInUnit + '/' + unitInfo.totalInUnit;
     } else if (unitInfo && unitInfo.isSummary) {
       DOM.counter.textContent = 'Unit ' + unitInfo.unitId + ' \u2013 Abschluss';
@@ -695,9 +760,11 @@
 
     // Text des Weiter-Buttons anpassen
     if (AppState.currentIndex >= AppState.screens.length - 1) {
-      DOM.btnNext.textContent = 'Abschließen';
+      DOM.btnNext.textContent = 'Abschlie\u00dfen';
+    } else if (screen.type === 'module_intro') {
+      DOM.btnNext.textContent = 'Modul starten';
     } else if (screen.type === 'unit_summary' && !screen.isLastUnit) {
-      DOM.btnNext.textContent = 'Nächste Einheit starten';
+      DOM.btnNext.textContent = 'N\u00e4chste Einheit starten';
     } else {
       DOM.btnNext.textContent = 'Weiter';
     }
