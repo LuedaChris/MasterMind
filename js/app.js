@@ -97,6 +97,7 @@
         // Zähle Quiz-Screens in dieser Unit für die Zusammenfassung
         quizCount: screens.filter(function (s) { return s.type === 'quiz'; }).length,
         quizScreens: screens.filter(function (s) { return s.type === 'quiz'; }),
+        infoCount: screens.filter(function (s) { return s.type === 'info'; }).length,
         screenCount: screens.length
       });
       AppState.unitMap.push({
@@ -253,7 +254,7 @@
     }
 
     stats.innerHTML =
-      '<div class="stat-item"><span class="stat-value">' + screen.screenCount + '</span><span class="stat-label">Abschnitte</span></div>' +
+      '<div class="stat-item"><span class="stat-value">' + (screen.infoCount || 0) + '</span><span class="stat-label">Lektionen</span></div>' +
       '<div class="stat-item' + quizResultClass + '"><span class="stat-value">' + correctQuestions + ' / ' + totalQuestions + '</span><span class="stat-label">Quizfragen richtig</span></div>';
     wrapper.appendChild(stats);
 
