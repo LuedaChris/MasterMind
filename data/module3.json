@@ -1,0 +1,102 @@
+{
+  "moduleId": "module-3",
+  "title": "Sinnessysteme und Repr\u00e4sentationskan\u00e4le (VAKOG)",
+  "description": "In diesem Modul lernst du, wie unser Gehirn Informationen \u00fcber die f\u00fcnf Sinne verarbeitet und wie du dieses Wissen f\u00fcr noch tieferen Rapport nutzen kannst.",
+  "version": "1.0",
+  "units": [
+    {
+      "unitId": "3.1",
+      "unitTitle": "Micro-Unit 3.1 \u2013 VAKOG: Die f\u00fcnf Tore zur Welt",
+      "screens": [
+        {
+          "id": "3.1.1",
+          "type": "info",
+          "title": "Die Sprache unserer Sinne (VAKOG)",
+          "content": "<p>In Modul 2 hast du gelernt, wie du \u00fcber K\u00f6rpersprache und Stimme eine tiefe Verbindung (Rapport) aufbaust. Jetzt heben wir diesen Rapport auf die n\u00e4chste, inhaltliche Stufe! Daf\u00fcr m\u00fcssen wir zun\u00e4chst verstehen, wie unser Gehirn Informationen eigentlich verarbeitet.</p><p>Erinnerst du dich an die \u201eLandkarte der Realit\u00e4t\u201c aus Modul 1? Diese innere Karte zeichnen wir nicht mit Stiften, sondern mit unseren Sinnen. Im NLP fassen wir diese f\u00fcnf Sinneskan\u00e4le unter dem Begriff <strong>VAKOG</strong> zusammen:</p><ul><li><strong>V</strong>isuell (Sehen): Bilder, Farben, Formen.</li><li><strong>A</strong>uditiv (H\u00f6ren): Kl\u00e4nge, Stimmen, Ger\u00e4usche.</li><li><strong>K</strong>in\u00e4sthetisch (F\u00fchlen): Ber\u00fchrungen, Temperaturen, Bewegung, aber auch innere Emotionen.</li><li><strong>O</strong>lfaktorisch (Riechen): D\u00fcfte und Ger\u00fcche.</li><li><strong>G</strong>ustatorisch (Schmecken): Geschmackssinn.</li></ul><p>Alles, was du jemals erlebt hast, speichert dein Gehirn in einer Kombination dieser f\u00fcnf Sinne ab. Sie sind die grundlegenden Bausteine deiner Erinnerungen und deines Denkens.</p>"
+        },
+        {
+          "id": "3.1.2",
+          "type": "quiz",
+          "title": "Zuordnungsaufgabe: Welcher Sinn ist das?",
+          "content": "<p>Ordne die Beschreibung dem richtigen VAKOG-Kanal zu.</p>",
+          "questions": [
+            {
+              "questionId": "q-3.1.2-a",
+              "questionType": "single_choice",
+              "questionText": "\u201eDie raue Oberfl\u00e4che eines Baumstamms sp\u00fcren.\u201c \u2013 Welcher Sinneskanal?",
+              "options": [
+                {"id": "visuell", "text": "Visuell (Sehen)"},
+                {"id": "auditiv", "text": "Auditiv (H\u00f6ren)"},
+                {"id": "kinaesthetisch", "text": "Kin\u00e4sthetisch (F\u00fchlen)"}
+              ],
+              "correctMatch": ["kinaesthetisch"],
+              "explanation": "Richtig! Das Sp\u00fcren einer Oberfl\u00e4che ist kin\u00e4sthetisch \u2013 der F\u00fchl-Kanal."
+            },
+            {
+              "questionId": "q-3.1.2-b",
+              "questionType": "single_choice",
+              "questionText": "\u201eDen Alarm eines Krankenwagens auf der Stra\u00dfe.\u201c \u2013 Welcher Sinneskanal?",
+              "options": [
+                {"id": "visuell", "text": "Visuell (Sehen)"},
+                {"id": "auditiv", "text": "Auditiv (H\u00f6ren)"},
+                {"id": "kinaesthetisch", "text": "Kin\u00e4sthetisch (F\u00fchlen)"}
+              ],
+              "correctMatch": ["auditiv"],
+              "explanation": "Richtig! Ger\u00e4usche und Kl\u00e4nge geh\u00f6ren zum auditiven Kanal. Jeder Gedanke und jede Erfahrung besteht aus diesen elementaren Sinnes-Bausteinen."
+            }
+          ]
+        },
+        {
+          "id": "3.1.3",
+          "type": "info",
+          "title": "Das bevorzugte Repr\u00e4sentationssystem",
+          "content": "<p>Obwohl wir (im Normalfall) alle f\u00fcnf Sinne nutzen, hat fast jeder Mensch ein sogenanntes <strong>bevorzugtes Repr\u00e4sentationssystem</strong> (auch Hauptsystem genannt). Das ist der Sinneskanal, den eine Person am h\u00e4ufigsten und schnellsten nutzt, um Informationen zu verarbeiten \u2013 besonders in Stresssituationen.</p><p>Ein <strong>visuell</strong> orientierter Mensch macht sich innere Bilder, um Situationen zu verstehen. Ein <strong>auditiver</strong> Mensch f\u00fchrt oft innere Dialoge. Ein <strong>kin\u00e4sthetischer</strong> Mensch muss Dinge sprichw\u00f6rtlich \u201ebegreifen\u201c oder nachf\u00fchlen.</p><p>(Olfaktorisch und Gustatorisch spielen als Hauptsysteme im Gesch\u00e4fts- und Beziehungsalltag meist eine untergeordnete Rolle.)</p>"
+        },
+        {
+          "id": "3.1.4",
+          "type": "quiz",
+          "title": "Quiz: Bevorzugtes System",
+          "questions": [
+            {
+              "questionId": "q-3.1.4-a",
+              "questionType": "single_choice",
+              "questionText": "Wahr oder Falsch? Wenn jemand ein \u201evisueller\u201c Typ ist, bedeutet das, dass er Gef\u00fchle oder Ger\u00e4usche gar nicht richtig wahrnehmen kann.",
+              "options": [
+                {"id": "wahr", "text": "Wahr"},
+                {"id": "falsch", "text": "Falsch"}
+              ],
+              "correctMatch": ["falsch"],
+              "explanation": "Falsch! Jeder nutzt alle intakten Sinne. Ein bevorzugtes System bedeutet lediglich, dass dieser Kanal vom Gehirn pr\u00e4feriert genutzt wird, um komplexe Informationen abzuspeichern oder abzurufen."
+            }
+          ]
+        },
+        {
+          "id": "3.1.5",
+          "type": "info",
+          "title": "Rapport 2.0 \u2013 Pr\u00e4dikate erkennen und spiegeln",
+          "content": "<p>Jetzt wird es extrem praktisch: Woran erkennst du das bevorzugte System deines Gegen\u00fcbers? <strong>An seiner Wortwahl!</strong> Menschen verraten durch ihre Verben, Adjektive und Redewendungen (sogenannte <strong>Pr\u00e4dikate</strong>), in welchem Kanal sie gerade denken.</p><ul><li><strong>Visuell:</strong> \u201eIch <em>sehe</em> das Problem\u201c, \u201eDas <em>sieht</em> rosig aus\u201c, \u201eLass uns das <em>beleuchten</em>.\u201c</li><li><strong>Auditiv:</strong> \u201eDas <em>klingt</em> gut\u201c, \u201eDa <em>klingelt</em> etwas bei mir\u201c, \u201eWir m\u00fcssen uns <em>abstimmen</em>.\u201c</li><li><strong>Kin\u00e4sthetisch:</strong> \u201eIch kann das nicht <em>greifen</em>\u201c, \u201eDas ist ein <em>hartes</em> St\u00fcck Arbeit\u201c, \u201eIch habe ein gutes <em>Gef\u00fchl</em> dabei.\u201c</li></ul><p>Wenn du genau hinh\u00f6rst und deine eigenen Worte an den Kanal deines Gespr\u00e4chspartners anpasst, erreichst du die <strong>absolute Meisterklasse des Pacings</strong>. Du spiegelst nicht mehr nur die K\u00f6rperhaltung, sondern die Struktur des Denkens selbst. Das erzeugt sofortigen, extrem tiefen Rapport.</p>"
+        },
+        {
+          "id": "3.1.6",
+          "type": "quiz",
+          "title": "Quiz: Sprich seine Sprache",
+          "content": "<p>Dein Kollege sagt: <em>\u201eIch sehe einfach nicht klar, wie wir dieses Projekt p\u00fcnktlich abschlie\u00dfen sollen. Es ist alles so verschwommen.\u201c</em></p>",
+          "questions": [
+            {
+              "questionId": "q-3.1.6-a",
+              "questionType": "single_choice",
+              "questionText": "Wie antwortest du, um sprachlich zu pacen (spiegeln)?",
+              "options": [
+                {"id": "a", "text": "\u201eIch habe das Gef\u00fchl, du stehst unter starkem Druck.\u201c (Kin\u00e4sthetisch)"},
+                {"id": "b", "text": "\u201eLass uns einen genauen Blick auf den Zeitplan werfen, dann wird das Bild sch\u00e4rfer.\u201c (Visuell)"},
+                {"id": "c", "text": "\u201eDas klingt nach viel Stress, wir sollten uns mal in Ruhe absprechen.\u201c (Auditiv)"}
+              ],
+              "correctMatch": ["b"],
+              "explanation": "Exakt! Du holst ihn in seiner visuellen Welt ab. Das Gehirn des Kollegen f\u00fchlt sich durch diese Wortwahl sofort verstanden und der Rapport vertieft sich massiv."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
