@@ -85,6 +85,103 @@
           "content": "<p>Du hast in dieser Einheit gelernt, dass <strong>Rapport</strong> der Zustand unbewussten Vertrauens ist und ma\u00dfgeblich \u00fcber den Erfolg unserer Kommunikation entscheidet. Du kennst nun auch die <strong>Spiegelneuronen</strong> als treibende Kraft dahinter.</p>"
         }
       ]
+    },
+    {
+      "unitId": "2.2",
+      "unitTitle": "Micro-Unit 2.2 \u2013 Die Kunst des Kalibrierens: Sehen, was wirklich ist",
+      "screens": [
+        {
+          "id": "2.2.1",
+          "type": "info",
+          "title": "Beobachten statt Halluzinieren",
+          "content": "<p>Willkommen zur\u00fcck! In der letzten Einheit haben wir gelernt, dass Rapport das Fundament jeder guten Kommunikation ist. Doch um eine Br\u00fccke zu jemandem zu bauen, musst du erst einmal genau sehen, wo der andere \u00fcberhaupt steht. Heute trainieren wir deine NLP-Superkraft: die <strong>sensorische Sch\u00e4rfe</strong>.</p><p>Im Alltag sind wir Meister im Interpretieren. Wenn jemand im Gespr\u00e4ch die Arme verschr\u00e4nkt, denken wir oft sofort: <em>\u201eOh, der ist aber abweisend!\u201c</em> oder <em>\u201eDie ist bestimmt genervt.\u201c</em> Im NLP nennen wir das <strong>\u201eHalluzinieren\u201c</strong>. Wir erfinden eine Bedeutung, die auf unserer eigenen Landkarte basiert, und \u00fcberst\u00fclpen sie dem anderen.</p><p>Die sensorische Sch\u00e4rfe verlangt von uns genau das Gegenteil: Wir trennen die reine Beobachtung strikt von der Interpretation. Ein NLP-Practitioner sieht in diesem Moment nicht \u201eAbneigung\u201c, er sieht lediglich: <em>\u201eDie Arme sind verschr\u00e4nkt.\u201c</em> Vielleicht ist der Person auch einfach nur kalt!</p><p>Der erste Schritt zu echtem Verst\u00e4ndnis ist das Abschalten unserer automatischen Interpretationsmaschine.</p>"
+        },
+        {
+          "id": "2.2.2",
+          "type": "quiz",
+          "title": "Zuordnungsaufgabe: Beobachtung oder Halluzination?",
+          "content": "<p>Szenario: Deine Kollegin schaut w\u00e4hrend deines Vortrags auf den Boden. Ordne die folgenden Aussagen richtig zu.</p>",
+          "questions": [
+            {
+              "questionId": "q-2.2.2-a",
+              "questionType": "single_choice",
+              "questionText": "\u201eSie zieht die Augenbrauen leicht zusammen und ihr Blick ist nach unten gerichtet.\u201c \u2013 Was ist das?",
+              "options": [
+                {"id": "beobachtung", "text": "Beobachtung (sensorische Sch\u00e4rfe)"},
+                {"id": "halluzination", "text": "Halluzination (Interpretation)"}
+              ],
+              "correctMatch": ["beobachtung"],
+              "explanation": "Richtig! Dies beschreibt rein objektiv, was du siehst \u2013 ohne Deutung."
+            },
+            {
+              "questionId": "q-2.2.2-b",
+              "questionType": "single_choice",
+              "questionText": "\u201eSie findet meinen Vortrag v\u00f6llig langweilig und h\u00f6rt nicht mehr zu.\u201c \u2013 Was ist das?",
+              "options": [
+                {"id": "beobachtung", "text": "Beobachtung (sensorische Sch\u00e4rfe)"},
+                {"id": "halluzination", "text": "Halluzination (Interpretation)"}
+              ],
+              "correctMatch": ["halluzination"],
+              "explanation": "Richtig! Das ist eine Halluzination/Interpretation \u2013 du kannst keine Gedanken lesen! Diese Trennung ist extrem wichtig."
+            }
+          ]
+        },
+        {
+          "id": "2.2.3",
+          "type": "info",
+          "title": "Worauf wir wirklich achten",
+          "content": "<p>Wenn wir nun aufh\u00f6ren zu interpretieren, worauf schauen wir dann? Die Antwort lautet: auf die feinsten <strong>physiologischen (k\u00f6rperlichen) Signale</strong>. Unser Nervensystem reagiert sofort auf jeden internen Gedanken und jedes Gef\u00fchl.</p><p>Achte in k\u00fcnftigen Gespr\u00e4chen bewusst auf diese kleinen, oft unbewussten Ver\u00e4nderungen bei deinem Gegen\u00fcber:</p><ul><li><strong>Atmung:</strong> Atmet die Person schnell oder langsam? Hoch in der Brust oder tief im Bauch?</li><li><strong>Hauttonus:</strong> Wird die Haut minimal r\u00f6tlicher (durch st\u00e4rkere Durchblutung) oder blasser?</li><li><strong>Muskelspannung:</strong> Spannt sich der Kiefer an? Ziehen sich die Schultern hoch oder sinken sie entspannt ab?</li><li><strong>Mikromimik:</strong> Welche winzigen, fl\u00fcchtigen Gesichtsausdr\u00fccke zeigen sich, etwa um die Augen oder Mundwinkel? (Fun Fact: Wusstest du, dass die Unterlippe oft minimal schmaler wird, wenn jemand unter Stress steht?)</li></ul>"
+        },
+        {
+          "id": "2.2.4",
+          "type": "quiz",
+          "title": "Quiz: Deine neuen Wahrnehmungsfilter",
+          "questions": [
+            {
+              "questionId": "q-2.2.4-a",
+              "questionType": "single_choice",
+              "questionText": "Welche der folgenden Aussagen ist ein perfektes Beispiel f\u00fcr eine gelungene NLP-Beobachtung?",
+              "options": [
+                {"id": "a", "text": "\u201eMein Kunde hat gerade gel\u00e4chelt, weil ihm mein Preisangebot gef\u00e4llt.\u201c"},
+                {"id": "b", "text": "\u201eIch bemerke, dass sich die Atmung meines Kunden in den Bauch verlagert hat und seine Schultern um etwa zwei Zentimeter gesunken sind.\u201c"},
+                {"id": "c", "text": "\u201eMein Kunde ist heute super entspannt und gl\u00fccklich.\u201c"}
+              ],
+              "correctMatch": ["b"],
+              "explanation": "Exakt! Nur Antwort B beschreibt rein objektiv messbare, k\u00f6rperliche Ver\u00e4nderungen, ohne ihnen voreilig eine Bedeutung zu geben."
+            }
+          ]
+        },
+        {
+          "id": "2.2.5",
+          "type": "info",
+          "title": "Die Kunst des Kalibrierens",
+          "content": "<p>Was machen wir nun mit all diesen Beobachtungen? Wir <strong>kalibrieren</strong>. Der Begriff kommt aus der Messtechnik und bedeutet \u201eeichen\u201c.</p><p>Jeder Mensch ist absolut einzigartig und dr\u00fcckt seine Emotionen k\u00f6rperlich anders aus. Kalibrieren bedeutet, dass du im Gespr\u00e4ch die individuelle <strong>\u201eBaseline\u201c</strong> (Grundlinie) deines Gegen\u00fcbers ermittelst. Du schaust genau hin: Wie atmet, schaut und spricht diese Person, wenn sie v\u00f6llig entspannt ist? Und wie ver\u00e4ndern sich diese feinen Signale, wenn du pl\u00f6tzlich ein kritisches Thema ansprichst?</p><p>Du lernst nicht irgendwelche starren K\u00f6rpersprache-Regeln aus einem Buch auswendig, sondern du erstellst in Echtzeit ein <strong>individuelles Profil</strong> genau des Menschen, der dir gerade gegen\u00fcbersitzt.</p>"
+        },
+        {
+          "id": "2.2.6",
+          "type": "quiz",
+          "title": "Quiz: Was bedeutet Kalibrieren?",
+          "questions": [
+            {
+              "questionId": "q-2.2.6-a",
+              "questionType": "single_choice",
+              "questionText": "Wahr oder Falsch? Kalibrieren bedeutet, dass du gelernt hast, dass verschr\u00e4nkte Arme bei jedem Menschen auf der Welt immer und ausnahmslos \u201eAblehnung\u201c bedeuten.",
+              "options": [
+                {"id": "wahr", "text": "Wahr"},
+                {"id": "falsch", "text": "Falsch"}
+              ],
+              "correctMatch": ["falsch"],
+              "explanation": "Falsch! Jeder Mensch hat seine eigene Landkarte und seine eigene Physiologie. Kalibrieren hei\u00dft gerade, die individuellen Signale genau dieser Person im aktuellen Moment wahrzunehmen, anstatt pauschale Regeln anzuwenden."
+            }
+          ]
+        },
+        {
+          "id": "2.2.7",
+          "type": "info",
+          "title": "Zusammenfassung",
+          "content": "<p>Hervorragend! Du hast in dieser Einheit gelernt, wie wichtig es ist, <strong>Beobachtung und Interpretation</strong> voneinander zu trennen. Durch sensorische Sch\u00e4rfe und genaues Kalibrieren nimmst du die Welt (und dein Gegen\u00fcber) ab sofort viel klarer und objektiver wahr.</p>"
+        }
+      ]
     }
   ]
 }
