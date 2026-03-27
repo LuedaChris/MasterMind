@@ -269,6 +269,88 @@
           "content": "<p>Du wei\u00dft nun, wie du durch das subtile Spiegeln von K\u00f6rpersprache und Stimme (<strong>Pacing</strong>) aktiv Rapport aufbaust. Du gehst quasi im Rhythmus deines Partners mit.</p><p>In der n\u00e4chsten Einheit (2.4) schauen wir uns an, was passiert, wenn dieser Rapport steht \u2013 dann wechseln wir n\u00e4mlich vom Mitgehen (Pacing) zum aktiven F\u00fchren (<strong>Leading</strong>)!</p>"
         }
       ]
+    },
+    {
+      "unitId": "2.4",
+      "unitTitle": "Micro-Unit 2.4 \u2013 Leading: Vom Mitgehen zum F\u00fchren",
+      "screens": [
+        {
+          "id": "2.4.1",
+          "type": "info",
+          "title": "Der flie\u00dfende \u00dcbergang",
+          "content": "<p>In der letzten Einheit hast du gelernt, wie du durch das Angleichen von K\u00f6rpersprache und Stimme (Pacing) eine tiefe, unbewusste Verbindung (Rapport) aufbaust. Doch Pacing allein ist nur die halbe Miete. Das eigentliche Ziel der Kommunikation erreichen wir erst im n\u00e4chsten Schritt: dem <strong>Leading</strong> (F\u00fchren).</p><p>Stell dir vor, du tanzt mit jemandem. Zuerst m\u00fcsst ihr euren gemeinsamen Rhythmus finden und euch aufeinander abstimmen (Pacing). Wenn ihr dann perfekt im Takt seid, kann einer von euch eine neue Figur einleiten, und der andere wird fast automatisch und m\u00fchelos folgen (Leading).</p><p>Genauso funktioniert es in der NLP-Kommunikation. Sobald du durch Pacing starken Rapport aufgebaut hast, ver\u00e4nderst du behutsam dein eigenes Verhalten. Wenn die Verbindung stark genug ist, wird sich das Unterbewusstsein deines Gegen\u00fcbers an dich anpassen. Du \u00fcbernimmst sanft die F\u00fchrung der Interaktion.</p>"
+        },
+        {
+          "id": "2.4.2",
+          "type": "quiz",
+          "title": "Quiz: Der richtige Rhythmus",
+          "questions": [
+            {
+              "questionId": "q-2.4.2-a",
+              "questionType": "free_text",
+              "questionText": "L\u00fccken-Text: Die goldene NLP-Regel lautet: Bevor du jemanden erfolgreich _______ (ignorieren / f\u00fchren / kritisieren) kannst, musst du ihn zuerst dort abholen, wo er steht (Pacing).",
+              "correctMatch": null,
+              "explanation": "F\u00fchren. Exakt! Ohne vorheriges Pacing und ohne Rapport wird jeder Versuch zu f\u00fchren sofort auf Widerstand sto\u00dfen."
+            }
+          ]
+        },
+        {
+          "id": "2.4.3",
+          "type": "info",
+          "title": "Zustandsmanagement durch Leading",
+          "content": "<p>Wozu nutzen wir Leading im Alltag? Meistens, um jemanden aus einem negativen, blockierten Zustand (z. B. Stress, Wut, Nervosit\u00e4t) in einen ressourcevollen, positiven Zustand (z. B. Ruhe, Offenheit, Fokus) zu begleiten.</p><p>Ein klassisches Beispiel: Ein Kunde oder Kollege kommt extrem w\u00fctend und aufgeregt zu dir. Er spricht laut, schnell und atmet flach.</p><ul><li><strong>Pacing:</strong> Du passt dich zun\u00e4chst seiner hohen Energie an (nicht seiner Wut, aber seinem Tempo und seiner Lautst\u00e4rke!), damit er sich verstanden f\u00fchlt.</li><li><strong>Leading:</strong> Nach ein paar S\u00e4tzen beginnst du ganz bewusst, deine eigene Stimme weicher und leiser werden zu lassen, du verlangsamst dein Sprechtempo und atmest tief in den Bauch.</li></ul><p>Dank der Spiegelneuronen wird sich das Nervensystem deines Gegen\u00fcbers unbewusst an deinen neuen, ruhigen Zustand angleichen. Die Wut verfliegt, und ihr k\u00f6nnt sachlich sprechen.</p>"
+        },
+        {
+          "id": "2.4.4",
+          "type": "quiz",
+          "title": "Quiz: Der aufgeregte Kollege",
+          "content": "<p>Eine Kollegin ist extrem nerv\u00f6s vor einer Pr\u00e4sentation. Sie wippt unruhig mit dem Fu\u00df und spricht sehr hastig.</p>",
+          "questions": [
+            {
+              "questionId": "q-2.4.4-a",
+              "questionType": "single_choice",
+              "questionText": "Wie wendest du \u201ePace and Lead\u201c an?",
+              "options": [
+                {"id": "a", "text": "Du sagst ihr sofort: \u201eBeruhige dich, atme mal tief durch!\u201c"},
+                {"id": "b", "text": "Du gehst kurz auf ihr hastiges Tempo ein (\u201eJa, das ist jetzt wirklich eine spannende Situation!\u201c), und verlangsamst dann sp\u00fcrbar deine eigene Stimme und Atmung, um ihr System zu beruhigen."},
+                {"id": "c", "text": "Du ignorierst sie komplett, damit sie dich nicht ansteckt."}
+              ],
+              "correctMatch": ["b"],
+              "explanation": "Hervorragend! Du baust erst die Br\u00fccke (Pacing) und f\u00fchrst sie dann durch deine eigene Physiologie in die Entspannung (Leading). Ein direkter Befehl wie bei Antwort A erzeugt meistens nur noch mehr Stress."
+            }
+          ]
+        },
+        {
+          "id": "2.4.5",
+          "type": "info",
+          "title": "Der Rapport-Test",
+          "content": "<p>Leading ist gleichzeitig der beste <strong>Test</strong>, um herauszufinden, ob du \u00fcberhaupt Rapport aufgebaut hast. Du bist dir nicht sicher, ob du einen guten Draht zu jemandem hast? Mach den Test!</p><p>Ver\u00e4ndere einfach mal bewusst deine K\u00f6rperhaltung \u2013 lehne dich zum Beispiel zur\u00fcck oder verschr\u00e4nke (entspannt) die Arme.</p><p>Folgt dir dein Gegen\u00fcber innerhalb der n\u00e4chsten Sekunden und \u00e4ndert seine Haltung in eine \u00e4hnliche Richtung? Herzlichen Gl\u00fcckwunsch, ihr seid im Rapport! Bleibt die Person jedoch starr in ihrer alten Position, wei\u00dft du sofort Bescheid: Die Br\u00fccke steht noch nicht ganz.</p><p>Die NLP-L\u00f6sung in diesem Fall? Ganz einfach: Geh einen Schritt zur\u00fcck und beginne wieder mit dem Pacing!</p>"
+        },
+        {
+          "id": "2.4.6",
+          "type": "quiz",
+          "title": "Quiz: Kein Versagen, nur Feedback",
+          "questions": [
+            {
+              "questionId": "q-2.4.6-a",
+              "questionType": "single_choice",
+              "questionText": "Wahr oder Falsch? Wenn du beim Versuch zu f\u00fchren (Leading) merkst, dass die andere Person dir nicht folgt, hast du als Kommunikator endg\u00fcltig versagt und solltest das Gespr\u00e4ch abbrechen.",
+              "options": [
+                {"id": "wahr", "text": "Wahr"},
+                {"id": "falsch", "text": "Falsch"}
+              ],
+              "correctMatch": ["falsch"],
+              "explanation": "Falsch! Erinnere dich an Modul 1: Es gibt kein Versagen, nur Feedback! Dass dein Gegen\u00fcber nicht folgt, ist lediglich das wertvolle Feedback, dass du noch mehr Pacing brauchst. Passe dich wieder an und versuche es sp\u00e4ter erneut."
+            }
+          ]
+        },
+        {
+          "id": "2.4.7",
+          "type": "info",
+          "title": "Zusammenfassung und Ausblick",
+          "content": "<p>Du beherrschst nun die K\u00f6nigsdisziplin der Kommunikation: <strong>Pace, Pace, Lead</strong>. Du holst Menschen in ihrer Realit\u00e4t ab und f\u00fchrst sie sanft in einen positiveren Zustand.</p><p>Doch was passiert, wenn man sich in einem hitzigen Gespr\u00e4ch v\u00f6llig verliert und der Rapport pl\u00f6tzlich abrei\u00dft? Genau das schauen wir uns in der n\u00e4chsten und letzten Einheit (2.5) dieses Moduls an: <strong>Rapport-Bruch und Reparatur!</strong></p>"
+        }
+      ]
     }
   ]
 }

@@ -85,7 +85,7 @@
   // Verfügbare Module (Katalog)
   var MODULE_CATALOG = [
     { file: 'data/module1.json', id: 'module-1', title: 'Modul 1: Fundamente und Grundannahmen des NLP', units: 5 },
-    { file: 'data/module2.json', id: 'module-2', title: 'Modul 2: Sensorische Sch\u00e4rfe, Kalibrierung und Rapport', units: 3 }
+    { file: 'data/module2.json', id: 'module-2', title: 'Modul 2: Sensorische Sch\u00e4rfe, Kalibrierung und Rapport', units: 4 }
   ];
 
   async function init() {
