@@ -648,9 +648,10 @@
     var submitBtn = DOM.content.querySelector('[data-action="submit-quiz"]');
     if (submitBtn) submitBtn.remove();
 
-    // Ergebnis-Banner einfügen
+    // Ergebnis-Banner einfügen und sanft dorthin scrollen
     var banner = createResultBanner(screen);
     DOM.content.insertBefore(banner, DOM.content.querySelector('.card'));
+    banner.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
     // "Weiter"-Button aktivieren und Fortschritt speichern
     updateNavButtons();
