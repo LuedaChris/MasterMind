@@ -47,6 +47,7 @@
     try {
       var data = {
         moduleId: AppState.moduleData ? AppState.moduleData.moduleId : null,
+        moduleFile: AppState.moduleFile || null,
         currentIndex: AppState.currentIndex,
         answers: AppState.answers,
         submitted: AppState.submitted
@@ -81,20 +82,42 @@
   // 2. INITIALISIERUNG – App starten
   // ===========================================
 
+  // Verfügbare Module (Katalog)
+  var MODULE_CATALOG = [
+    { file: 'data/module1.json', id: 'module-1', title: 'Modul 1: Fundamente und Grundannahmen des NLP', units: 5 },
+    { file: 'data/module2.json', id: 'module-2', title: 'Modul 2: Sensorische Sch\u00e4rfe, Kalibrierung und Rapport', units: 1 }
+  ];
+
   async function init() {
+    // Prüfe ob ein gespeichertes Modul vorliegt
+    var savedModuleFile = null;
     try {
-      // JSON-Datei laden (der gesamte Lerninhalt)
-      const response = await fetch('data/module1.json');
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        var parsed = JSON.parse(raw);
+        if (parsed.moduleFile) savedModuleFile = parsed.moduleFile;
+      }
+    } catch (e) {}
+
+    if (savedModuleFile) {
+      await loadModule(savedModuleFile);
+    } else {
+      renderModuleCatalog();
+    }
+  }
+
+  async function loadModule(moduleFile) {
+    try {
+      var response = await fetch(moduleFile);
       if (!response.ok) throw new Error('Modul konnte nicht geladen werden.');
       AppState.moduleData = await response.json();
+      AppState.moduleFile = moduleFile;
 
-      // Alle Screens aus allen Units in eine flache Liste packen.
-      // Das macht die Navigation einfacher: Screen 0, 1, 2, 3, ...
       flattenScreens();
 
       // Gespeicherten Fortschritt laden (falls vorhanden)
       var saved = loadProgress();
-      if (saved) {
+      if (saved && saved.moduleId === AppState.moduleData.moduleId) {
         AppState.answers = saved.answers || {};
         AppState.submitted = saved.submitted || {};
         renderScreen(saved.currentIndex || 0);
@@ -106,6 +129,57 @@
         '<div class="card"><h2>Fehler beim Laden</h2>' +
         '<p>' + error.message + '</p></div>';
     }
+  }
+
+  function renderModuleCatalog() {
+    DOM.content.innerHTML = '';
+    DOM.content.classList.remove('slide-forward', 'slide-back');
+    void DOM.content.offsetHeight;
+    DOM.content.classList.add('slide-forward');
+
+    DOM.progressFill.style.width = '0%';
+    DOM.counter.textContent = '';
+    DOM.btnBack.disabled = true;
+    DOM.btnNext.disabled = true;
+
+    var wrapper = document.createElement('div');
+    wrapper.className = 'module-catalog';
+
+    var h1 = document.createElement('h1');
+    h1.className = 'catalog-title';
+    h1.textContent = 'MasterMind';
+    wrapper.appendChild(h1);
+
+    var subtitle = document.createElement('p');
+    subtitle.className = 'catalog-subtitle';
+    subtitle.textContent = 'W\u00e4hle ein Lernmodul:';
+    wrapper.appendChild(subtitle);
+
+    for (var i = 0; i < MODULE_CATALOG.length; i++) {
+      var mod = MODULE_CATALOG[i];
+      var card = document.createElement('div');
+      card.className = 'catalog-card';
+      card.setAttribute('data-module-file', mod.file);
+
+      // Prüfe ob Fortschritt für dieses Modul existiert
+      var hasProgress = false;
+      try {
+        var raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          var parsed = JSON.parse(raw);
+          if (parsed.moduleId === mod.id) hasProgress = true;
+        }
+      } catch (e) {}
+
+      card.innerHTML =
+        '<div class="catalog-card-title">' + mod.title + '</div>' +
+        '<div class="catalog-card-meta">' + mod.units + ' Lerneinheit' + (mod.units > 1 ? 'en' : '') + '</div>' +
+        (hasProgress ? '<div class="catalog-card-badge">Fortsetzen</div>' : '');
+
+      wrapper.appendChild(card);
+    }
+
+    DOM.content.appendChild(wrapper);
   }
 
   // Nimmt die verschachtelte Struktur (Module > Units > Screens)
@@ -766,14 +840,15 @@
       '<p>Du hast alle Lerneinheiten dieses Moduls durchgearbeitet.</p>' +
       '<p style="margin-top: 16px; color: var(--accent);">' +
       (AppState.moduleData.title || 'Dieses Modul') +
-      ' ist geschafft!</p>';
+      ' ist geschafft!</p>' +
+      '<button class="btn-submit" style="margin-top: 24px;" data-action="back-to-catalog">Zur\u00fcck zur Modul\u00fcbersicht</button>';
     DOM.content.appendChild(card);
 
     // Progress auf 100%
     DOM.progressFill.style.width = '100%';
     DOM.counter.textContent = '';
     DOM.btnNext.disabled = true;
-    DOM.btnBack.disabled = false;
+    DOM.btnBack.disabled = true;
 
     // Fortschritt zurücksetzen (Modul ist fertig)
     clearProgress();
@@ -837,6 +912,25 @@
 
   DOM.content.addEventListener('click', function (e) {
     var target = e.target;
+
+    // Modul-Karte geklickt? (Katalog-Ansicht)
+    var catalogCard = target.closest('.catalog-card');
+    if (catalogCard) {
+      var moduleFile = catalogCard.getAttribute('data-module-file');
+      if (moduleFile) loadModule(moduleFile);
+      return;
+    }
+
+    // "Zurück zur Modulübersicht" geklickt?
+    if (target.getAttribute('data-action') === 'back-to-catalog') {
+      AppState.moduleData = null;
+      AppState.screens = [];
+      AppState.unitMap = [];
+      AppState.answers = {};
+      AppState.submitted = {};
+      renderModuleCatalog();
+      return;
+    }
 
     // "Antworten prüfen" geklickt?
     if (target.getAttribute('data-action') === 'submit-quiz') {

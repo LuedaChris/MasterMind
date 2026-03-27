@@ -1,0 +1,90 @@
+{
+  "moduleId": "module-2",
+  "title": "Sensorische Sch\u00e4rfe, Kalibrierung und Beziehungsaufbau (Rapport)",
+  "description": "In diesem Modul wirst du extrem praktisch. Du lernst, k\u00f6rperliche und sprachliche Signale bei anderen zu lesen und f\u00fcr gelingende Kommunikation zu nutzen.",
+  "version": "1.0",
+  "units": [
+    {
+      "unitId": "2.1",
+      "unitTitle": "Micro-Unit 2.1 \u2013 Die Architektur des Rapports: Die Basis jeder Verbindung",
+      "screens": [
+        {
+          "id": "2.1.1",
+          "type": "info",
+          "title": "Was ist eigentlich Rapport?",
+          "content": "<p>Willkommen in Modul 2! Nachdem wir uns im ersten Modul die Grundlagen unserer Wahrnehmung angesehen haben, widmen wir uns nun der Praxis der zwischenmenschlichen Kommunikation. Den Anfang macht ein Konzept, das \u00fcber Erfolg oder Misserfolg jedes Gespr\u00e4chs entscheidet.</p><p>Stell dir vor, du triffst jemanden und hast sofort das Gef\u00fchl: <em>\u201eWir sind vollkommen auf einer Wellenl\u00e4nge!\u201c</em> Die Unterhaltung flie\u00dft m\u00fchelos, ihr versteht euch fast blind. Genau diesen Zustand tiefen, oft unbewussten Vertrauens und emotionaler Resonanz nennen wir im NLP <strong>Rapport</strong>.</p><p>Rapport ist mehr als nur Sympathie; es ist ein sp\u00fcrbarer Gleichklang zwischen zwei Menschen. Er sorgt daf\u00fcr, dass sich beide Parteien sicher, verstanden und respektiert f\u00fchlen.</p>"
+        },
+        {
+          "id": "2.1.2",
+          "type": "quiz",
+          "title": "Quiz: Die Definition",
+          "questions": [
+            {
+              "questionId": "q-2.1.2-a",
+              "questionType": "free_text",
+              "questionText": "L\u00fccken-Text: Im NLP bezeichnet der Begriff Rapport den Aufbau von tiefem, oft unbewusstem _______ (Vertrauen / Widerstand / Wissen) und emotionaler Resonanz.",
+              "correctMatch": null,
+              "explanation": "Vertrauen. Richtig! Es geht um die vertrauensvolle, unbewusste Verbindung zwischen Menschen, die jede gute Kommunikation tr\u00e4gt."
+            }
+          ]
+        },
+        {
+          "id": "2.1.3",
+          "type": "info",
+          "title": "Die Biologie der Verbundenheit",
+          "content": "<p>Rapport ist kein Zufall und auch keine Esoterik. Er hat eine handfeste neurologische Basis in unserem Gehirn: die sogenannten <strong>Spiegelneuronen</strong>.</p><p>Hast du dich schon mal gewundert, warum G\u00e4hnen so ansteckend ist? Oder warum du automatisch zur\u00fcckl\u00e4chelst, wenn dich jemand strahlend ansieht? Das liegt an deinen Spiegelneuronen! Sie feuern in dem Moment, in dem du eine Handlung bei jemand anderem beobachtest, genauso, als w\u00fcrdest du sie selbst ausf\u00fchren.</p><p>Sie sind unsere <strong>biologische Hardware f\u00fcr Empathie</strong> und unbewussten Rapport.</p>"
+        },
+        {
+          "id": "2.1.4",
+          "type": "quiz",
+          "title": "Quiz: Spiegelneuronen",
+          "questions": [
+            {
+              "questionId": "q-2.1.4-a",
+              "questionType": "single_choice",
+              "questionText": "Wahr oder Falsch? Rapport ist ein rein abstraktes, psychologisches Konstrukt ohne nachweisbare Basis im menschlichen K\u00f6rper.",
+              "options": [
+                {"id": "wahr", "text": "Wahr"},
+                {"id": "falsch", "text": "Falsch"}
+              ],
+              "correctMatch": ["falsch"],
+              "explanation": "Falsch! Rapport hat durch unsere Spiegelneuronen eine ganz konkrete neurologische Basis, die uns biologisch zur Empathie bef\u00e4higt."
+            }
+          ]
+        },
+        {
+          "id": "2.1.5",
+          "type": "info",
+          "title": "Der Schl\u00fcssel zum Kommunikationserfolg",
+          "content": "<p>Im NLP lautet eine eiserne Grundregel: <strong>Rapport goes first!</strong> (Rapport kommt zuerst!). Er ist die zwingende Voraussetzung f\u00fcr jede gelingende Kommunikation, jede Form der \u00dcberzeugungsarbeit und jede therapeutische Intervention.</p><p>Versuchst du, jemanden von einer Idee zu \u00fcberzeugen oder ihm Feedback zu geben, ohne vorher Rapport aufgebaut zu haben, wird dein Gegen\u00fcber unbewusst in den Widerstand gehen und deine Argumente blockieren.</p><p>Mit starkem Rapport hingegen sinken die kritischen Filter, die Bereitschaft zur Kooperation steigt und die T\u00fcren f\u00fcr echte, wirkungsvolle Ver\u00e4nderungen \u00f6ffnen sich.</p>"
+        },
+        {
+          "id": "2.1.6",
+          "type": "quiz",
+          "title": "Quiz: Die richtige Reihenfolge",
+          "content": "<p>Du m\u00f6chtest in einem Meeting einen sehr skeptischen Kollegen von deinem neuen Projektvorschlag \u00fcberzeugen.</p>",
+          "questions": [
+            {
+              "questionId": "q-2.1.6-a",
+              "questionType": "single_choice",
+              "questionText": "Was ist laut NLP der wichtigste erste Schritt?",
+              "options": [
+                {"id": "a", "text": "Sofort die besten logischen Argumente auf den Tisch legen, bevor er etwas sagen kann."},
+                {"id": "b", "text": "Zun\u00e4chst Rapport (eine vertrauensvolle Resonanz) aufbauen, bevor es an die inhaltliche \u00dcberzeugungsarbeit geht."},
+                {"id": "c", "text": "Ihn ignorieren und den Rest des Teams ansprechen."}
+              ],
+              "correctMatch": ["b"],
+              "explanation": "Exakt! Ohne Rapport verpuffen selbst die besten Argumente. Zuerst die Br\u00fccke bauen, dann den Inhalt transportieren!"
+            }
+          ]
+        },
+        {
+          "id": "2.1.7",
+          "type": "info",
+          "title": "Zusammenfassung",
+          "content": "<p>Du hast in dieser Einheit gelernt, dass <strong>Rapport</strong> der Zustand unbewussten Vertrauens ist und ma\u00dfgeblich \u00fcber den Erfolg unserer Kommunikation entscheidet. Du kennst nun auch die <strong>Spiegelneuronen</strong> als treibende Kraft dahinter.</p>"
+        }
+      ]
+    }
+  ]
+}
