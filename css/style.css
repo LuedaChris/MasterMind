@@ -109,13 +109,25 @@ html, body {
   margin: 0 auto;
   padding: 24px 20px 100px;
   /* 100px unten = Platz für die fixierte Navigation */
-  animation: fadeIn 0.3s ease;
 }
 
-/* Einblend-Animation für neue Screens */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to   { opacity: 1; transform: translateY(0); }
+/* Richtungsabhängige Slide-Animationen */
+#screen-content.slide-forward {
+  animation: slideForward 0.3s ease;
+}
+
+#screen-content.slide-back {
+  animation: slideBack 0.3s ease;
+}
+
+@keyframes slideForward {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideBack {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
 }
 
 /* ============================================

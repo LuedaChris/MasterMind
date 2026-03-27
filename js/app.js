@@ -175,9 +175,15 @@
   // 3. RENDERING – Screens anzeigen
   // ===========================================
 
+  var lastIndex = -1; // Für Richtungserkennung
+
   function renderScreen(index) {
     // Sicherheitscheck: Index darf nicht außerhalb liegen
     if (index < 0 || index >= AppState.screens.length) return;
+
+    // Slide-Richtung bestimmen
+    var direction = (index >= lastIndex) ? 'slide-forward' : 'slide-back';
+    lastIndex = index;
 
     AppState.currentIndex = index;
     const screen = AppState.screens[index];
@@ -186,11 +192,10 @@
     // Bevor wir den neuen Screen zeigen, alten Inhalt leeren
     DOM.content.innerHTML = '';
 
-    // Animation neu starten (kurz entfernen, dann wieder setzen)
-    DOM.content.style.animation = 'none';
-    // Dieser "Trick" zwingt den Browser, die Animation neu zu starten
+    // Slide-Animation starten
+    DOM.content.classList.remove('slide-forward', 'slide-back');
     void DOM.content.offsetHeight;
-    DOM.content.style.animation = '';
+    DOM.content.classList.add(direction);
 
     // Unit-Titel über dem Screen anzeigen (z.B. "Micro-Unit 1.1")
     if (unitInfo && unitInfo.unitTitle) {
@@ -750,9 +755,9 @@
 
   function showCompletionScreen() {
     DOM.content.innerHTML = '';
-    DOM.content.style.animation = 'none';
+    DOM.content.classList.remove('slide-forward', 'slide-back');
     void DOM.content.offsetHeight;
-    DOM.content.style.animation = '';
+    DOM.content.classList.add('slide-forward');
 
     var card = document.createElement('div');
     card.className = 'card completion-screen';
