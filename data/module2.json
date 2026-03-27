@@ -182,6 +182,93 @@
           "content": "<p>Hervorragend! Du hast in dieser Einheit gelernt, wie wichtig es ist, <strong>Beobachtung und Interpretation</strong> voneinander zu trennen. Durch sensorische Sch\u00e4rfe und genaues Kalibrieren nimmst du die Welt (und dein Gegen\u00fcber) ab sofort viel klarer und objektiver wahr.</p>"
         }
       ]
+    },
+    {
+      "unitId": "2.3",
+      "unitTitle": "Micro-Unit 2.3 \u2013 Pacing: Die Kunst des Spiegelns",
+      "screens": [
+        {
+          "id": "2.3.1",
+          "type": "info",
+          "title": "Was ist Pacing?",
+          "content": "<p>In der letzten Einheit hast du gelernt, dein Gegen\u00fcber genau zu beobachten (Kalibrieren). Jetzt nutzen wir diese Beobachtungen aktiv! Der n\u00e4chste Schritt zum perfekten Rapport nennt sich <strong>Pacing</strong> (englisch f\u00fcr \u201eSchritt halten\u201c oder \u201emitgehen\u201c).</p><p>Pacing bedeutet, sich dem Verhalten des Gespr\u00e4chspartners systematisch und respektvoll anzugleichen. Menschen m\u00f6gen unbewusst Menschen, die ihnen \u00e4hnlich sind. Wenn wir uns \u00e4hnlich verhalten, signalisieren wir dem Unterbewusstsein des anderen: <em>\u201eWir sind uns \u00e4hnlich, du bist bei mir sicher, wir verstehen uns.\u201c</em></p><p>Dadurch entsteht auf neurologischer Ebene (erinnere dich an die Spiegelneuronen!) ein tiefer, unbewusster Gleichklang \u2013 der Rapport.</p>"
+        },
+        {
+          "id": "2.3.2",
+          "type": "quiz",
+          "title": "Quiz: Das Ziel von Pacing",
+          "questions": [
+            {
+              "questionId": "q-2.3.2-a",
+              "questionType": "single_choice",
+              "questionText": "Warum passen wir uns beim Pacing an das Gegen\u00fcber an?",
+              "options": [
+                {"id": "a", "text": "Um die Person zu verspotten und zu zeigen, wer der St\u00e4rkere ist."},
+                {"id": "b", "text": "Um dem Unterbewusstsein des anderen \u00c4hnlichkeit und Sicherheit zu signalisieren und so unbewusstes Vertrauen aufzubauen."},
+                {"id": "c", "text": "Um die eigene Landkarte der Realit\u00e4t zu ver\u00e4ndern."}
+              ],
+              "correctMatch": ["b"],
+              "explanation": "Richtig! Pacing ist eine nonverbale Br\u00fccke, die tiefes Vertrauen aufbaut."
+            }
+          ]
+        },
+        {
+          "id": "2.3.3",
+          "type": "info",
+          "title": "Nonverbales Pacing (K\u00f6rpersprache)",
+          "content": "<p>Der offensichtlichste Weg des Pacings ist die K\u00f6rpersprache. Wenn dein Gegen\u00fcber sich zur\u00fccklehnt und die Beine \u00fcberschl\u00e4gt, tust du das nach einem kurzen Moment auch. Lehnen sie sich nach vorne, lehnst du dich nach vorne.</p><p><strong>Ganz wichtig: Pacing ist kein Nach\u00e4ffen!</strong> Es geht nicht darum, jede noch so kleine Bewegung in derselben Sekunde wie ein Roboter zu kopieren. Das w\u00fcrde den anderen nur irritieren und den Rapport zerst\u00f6ren.</p><p>Es geht um ein <strong>sanftes, zeitversetztes und nat\u00fcrliches Angleichen</strong> der allgemeinen K\u00f6rperhaltung, der Gestik und im Idealfall sogar der Atmung.</p>"
+        },
+        {
+          "id": "2.3.4",
+          "type": "quiz",
+          "title": "Quiz: Subtiles Spiegeln",
+          "content": "<p>Dein Kunde kratzt sich w\u00e4hrend des Gespr\u00e4chs pl\u00f6tzlich intensiv an der Nase.</p>",
+          "questions": [
+            {
+              "questionId": "q-2.3.4-a",
+              "questionType": "single_choice",
+              "questionText": "Was tust du als guter NLP-Anwender?",
+              "options": [
+                {"id": "a", "text": "Du kratzt dich sofort ebenfalls an der Nase (direktes Spiegeln)."},
+                {"id": "b", "text": "Du ignorierst diese spezifische, unruhige Bewegung, da direktes Nachmachen als \u201eNach\u00e4ffen\u201c wahrgenommen werden k\u00f6nnte."},
+                {"id": "c", "text": "Du sagst ihm, dass er sich nicht an der Nase kratzen soll."}
+              ],
+              "correctMatch": ["b"],
+              "explanation": "Exakt! NLP-Pacing ist immer subtil und elegant. Auff\u00e4llige Ticks oder unruhige Bewegungen spiegeln wir niemals direkt."
+            }
+          ]
+        },
+        {
+          "id": "2.3.5",
+          "type": "info",
+          "title": "Paraverbales Pacing (Die Stimme)",
+          "content": "<p>Rapport entsteht nicht nur \u00fcber das, was wir sehen, sondern auch massiv \u00fcber das, was wir h\u00f6ren. Beim <strong>paraverbalen Pacing</strong> gleichst du dich der Stimme deines Gegen\u00fcbers an.</p><p>Spricht dein Gespr\u00e4chspartner sehr schnell und laut (oft ein Zeichen f\u00fcr Aufregung oder Begeisterung), und du antwortest extrem langsam und leise, bricht der Rapport sofort ab. Ihr seid buchst\u00e4blich nicht auf \u201ederselben Wellenl\u00e4nge\u201c.</p><p>Gleichst du jedoch dein Sprechtempo, deine Lautst\u00e4rke und deine Stimmtonalit\u00e4t an, f\u00fchlt sich der andere sofort abgeholt und verstanden.</p>"
+        },
+        {
+          "id": "2.3.6",
+          "type": "quiz",
+          "title": "Quiz: Paraverbales Pacing",
+          "questions": [
+            {
+              "questionId": "q-2.3.6-a",
+              "questionType": "single_choice",
+              "questionText": "Wahr oder Falsch? Paraverbales Pacing bedeutet, dass du den Dialekt oder Akzent (z. B. S\u00e4chsisch oder Bayerisch) deines Gegen\u00fcbers exakt imitierst, auch wenn du ihn selbst gar nicht sprichst.",
+              "options": [
+                {"id": "wahr", "text": "Wahr"},
+                {"id": "falsch", "text": "Falsch"}
+              ],
+              "correctMatch": ["falsch"],
+              "explanation": "Falsch! Das Imitieren von Dialekten wirkt schnell unauthentisch oder herablassend. Passe dich stattdessen an universelle Faktoren wie Tempo, Rhythmus und Lautst\u00e4rke an."
+            }
+          ]
+        },
+        {
+          "id": "2.3.7",
+          "type": "info",
+          "title": "Zusammenfassung und Ausblick",
+          "content": "<p>Du wei\u00dft nun, wie du durch das subtile Spiegeln von K\u00f6rpersprache und Stimme (<strong>Pacing</strong>) aktiv Rapport aufbaust. Du gehst quasi im Rhythmus deines Partners mit.</p><p>In der n\u00e4chsten Einheit (2.4) schauen wir uns an, was passiert, wenn dieser Rapport steht \u2013 dann wechseln wir n\u00e4mlich vom Mitgehen (Pacing) zum aktiven F\u00fchren (<strong>Leading</strong>)!</p>"
+        }
+      ]
     }
   ]
 }
