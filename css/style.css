@@ -467,6 +467,13 @@ html, body {
   white-space: nowrap;
 }
 
+#screen-counter.counter-clickable {
+  cursor: pointer;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .nav-btn {
   flex-shrink: 0;
   padding: 10px 24px;

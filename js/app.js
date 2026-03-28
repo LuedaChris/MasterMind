@@ -802,9 +802,26 @@
   // ===========================================
 
   function goBack() {
+    var screen = AppState.screens[AppState.currentIndex];
+
+    // Auf dem Modul-Intro → zurück zum Katalog
+    if (screen && screen.type === 'module_intro') {
+      backToCatalog();
+      return;
+    }
+
     // Antworten des aktuellen Screens sichern (ohne auszuwerten)
     collectAnswers();
     renderScreen(AppState.currentIndex - 1);
+  }
+
+  function backToCatalog() {
+    AppState.moduleData = null;
+    AppState.screens = [];
+    AppState.unitMap = [];
+    AppState.answers = {};
+    AppState.submitted = {};
+    renderModuleCatalog();
   }
 
   function goNext() {
@@ -870,20 +887,29 @@
     var unitInfo = AppState.unitMap[AppState.currentIndex];
     if (unitInfo && unitInfo.isIntro) {
       DOM.counter.textContent = '\u00dcbersicht';
+      DOM.counter.classList.add('counter-clickable');
     } else if (unitInfo && unitInfo.unitId && !unitInfo.isSummary) {
       DOM.counter.textContent = 'Unit ' + unitInfo.unitId + ' \u00b7 ' + unitInfo.screenInUnit + '/' + unitInfo.totalInUnit;
+      DOM.counter.classList.remove('counter-clickable');
     } else if (unitInfo && unitInfo.isSummary) {
       DOM.counter.textContent = 'Unit ' + unitInfo.unitId + ' \u2013 Abschluss';
+      DOM.counter.classList.remove('counter-clickable');
     } else {
       DOM.counter.textContent = current + ' / ' + total;
+      DOM.counter.classList.remove('counter-clickable');
     }
   }
 
   function updateNavButtons() {
     var screen = AppState.screens[AppState.currentIndex];
 
-    // Zurück-Button: Nur auf Screen 0 deaktiviert
-    DOM.btnBack.disabled = (AppState.currentIndex === 0);
+    // Zurück-Button: Auf module_intro → zurück zum Katalog, sonst deaktiviert bei Index 0
+    if (screen.type === 'module_intro') {
+      DOM.btnBack.disabled = false;
+      DOM.btnBack.textContent = 'Zurück';
+    } else {
+      DOM.btnBack.disabled = (AppState.currentIndex === 0);
+    }
 
     // Weiter-Button: Bei Quiz-Screens erst nach Auswertung klickbar
     if (screen.type === 'quiz' && !AppState.submitted[screen.id]) {
@@ -924,12 +950,7 @@
 
     // "Zurück zur Modulübersicht" geklickt?
     if (target.getAttribute('data-action') === 'back-to-catalog') {
-      AppState.moduleData = null;
-      AppState.screens = [];
-      AppState.unitMap = [];
-      AppState.answers = {};
-      AppState.submitted = {};
-      renderModuleCatalog();
+      backToCatalog();
       return;
     }
 
@@ -967,6 +988,13 @@
   // Navigation: Zurück und Weiter
   DOM.btnBack.addEventListener('click', goBack);
   DOM.btnNext.addEventListener('click', goNext);
+
+  // Übersicht-Link im Counter → zurück zum Katalog
+  DOM.counter.addEventListener('click', function () {
+    if (DOM.counter.classList.contains('counter-clickable')) {
+      backToCatalog();
+    }
+  });
 
   // Keyboard-Navigation
   document.addEventListener('keydown', function (e) {
