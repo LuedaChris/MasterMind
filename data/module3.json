@@ -97,6 +97,106 @@
           ]
         }
       ]
+    },
+    {
+      "unitId": "3.2",
+      "unitTitle": "Micro-Unit 3.2 \u2013 Augenzugangshinweise: Blicke lesen lernen",
+      "screens": [
+        {
+          "id": "3.2.1",
+          "type": "info",
+          "title": "Das Fenster zum Gehirn",
+          "content": "<p>In der letzten Einheit hast du gelernt, wie Menschen durch ihre Wortwahl (Pr\u00e4dikate) ihr bevorzugtes Sinnessystem verraten. Aber was ist, wenn jemand gerade schweigt und nur nachdenkt? Heute lernst du eine der faszinierendsten NLP-Techniken kennen: Wie du die <strong>Gedankenstruktur</strong> deines Gegen\u00fcbers an seinen Augen ablesen kannst!</p><p>Im NLP haben John Grinder und Richard Bandler entdeckt, dass unsere Augenbewegungen nicht zuf\u00e4llig sind. Sie sind neurologisch eng mit der Art und Weise verkn\u00fcpft, wie unser Gehirn Informationen abruft oder konstruiert. Diese unbewussten Blickrichtungen nennen wir <strong>Augenzugangshinweise</strong> (Eye Accessing Cues).</p><p>Wenn du jemandem eine Frage stellst, zeigen dir seine Augen f\u00fcr den Bruchteil einer Sekunde, in welchem VAKOG-Kanal er gerade nach der Antwort sucht \u2013 noch bevor er \u00fcberhaupt anf\u00e4ngt zu sprechen!</p>"
+        },
+        {
+          "id": "3.2.2",
+          "type": "quiz",
+          "title": "Quiz: Augenbewegungen",
+          "questions": [
+            {
+              "questionId": "q-3.2.2-a",
+              "questionType": "single_choice",
+              "questionText": "Wahr oder Falsch? Augenbewegungen beim Nachdenken sind rein zuf\u00e4llige Muskelzuckungen und haben keine tiefere Bedeutung f\u00fcr die Informationsverarbeitung.",
+              "options": [
+                {"id": "wahr", "text": "Wahr"},
+                {"id": "falsch", "text": "Falsch"}
+              ],
+              "correctMatch": ["falsch"],
+              "explanation": "Falsch! Augenbewegungen sind systematisch mit dem Abruf von bestimmten Sinnesinformationen (Bildern, T\u00f6nen, Gef\u00fchlen) in unserem Gehirn verbunden."
+            }
+          ]
+        },
+        {
+          "id": "3.2.3",
+          "type": "info",
+          "title": "Das Standard-Muster (Visuell und Auditiv)",
+          "content": "<p>Schauen wir uns das Muster an. Bei den meisten rechtsh\u00e4ndig organisierten Menschen gilt folgendes Grundschema (immer aus deiner Perspektive betrachtet, wenn du die Person ansiehst):</p><h3>Visuell (Blick nach oben)</h3><p>Schaut die Person nach oben links oder oben rechts, verarbeitet sie <strong>Bilder</strong>. Oben links bedeutet meistens, sie <em>erinnert</em> sich an ein reales Bild (z. B. \u201eWelche Farbe hat die Haust\u00fcr deiner Eltern?\u201c). Oben rechts bedeutet, sie <em>konstruiert</em> ein neues Bild (z. B. \u201eWie s\u00e4he ein lila Elefant mit gelben Punkten aus?\u201c).</p><h3>Auditiv (Blick zur Seite)</h3><p>Wandern die Augen horizontal auf Ohrenh\u00f6he nach links oder rechts, verarbeitet die Person <strong>Ger\u00e4usche, Stimmen oder Kl\u00e4nge</strong>. Auch hier gilt im Standardmodell: links = erinnert, rechts = konstruiert.</p>"
+        },
+        {
+          "id": "3.2.4",
+          "type": "quiz",
+          "title": "Quiz: Der visuelle Denker",
+          "content": "<p>Du fragst deinen Kunden: <em>\u201eWie stellen Sie sich das fertige Design vor?\u201c</em> Bevor er antwortet, wandert sein Blick deutlich nach schr\u00e4g oben rechts.</p>",
+          "questions": [
+            {
+              "questionId": "q-3.2.4-a",
+              "questionType": "single_choice",
+              "questionText": "Was bedeutet das h\u00f6chstwahrscheinlich?",
+              "options": [
+                {"id": "a", "text": "Er ist genervt von der Frage und verdreht die Augen."},
+                {"id": "b", "text": "Er greift auf den kin\u00e4sthetischen (f\u00fchlenden) Kanal zu."},
+                {"id": "c", "text": "Er konstruiert gerade innerlich ein visuelles Bild des fertigen Designs."}
+              ],
+              "correctMatch": ["c"],
+              "explanation": "Exakt! Der Blick nach oben zeigt einen visuellen Prozess an. Da er sich die Zukunft vorstellt, konstruiert er das Bild (meistens nach rechts)."
+            }
+          ]
+        },
+        {
+          "id": "3.2.5",
+          "type": "info",
+          "title": "Gef\u00fchle und innere Dialoge (Der Blick nach unten)",
+          "content": "<p>Fehlt noch der Blick nach unten. Auch hier gibt es eine klare Aufteilung der Kan\u00e4le:</p><h3>Kin\u00e4sthetisch (Blick nach unten rechts)</h3><p>Schaut dein Gegen\u00fcber nach unten rechts (aus deiner Sicht), greift er auf seine <strong>Gef\u00fchle oder k\u00f6rperliche Empfindungen</strong> zu. Das passiert oft, wenn jemand in sich geht, um zu sp\u00fcren, ob sich eine Entscheidung \u201erichtig anf\u00fchlt\u201c.</p><h3>Innerer Dialog (Blick nach unten links)</h3><p>Der Blick nach unten links steht f\u00fcr den <strong>auditiv-digitalen Kanal</strong>. Die Person f\u00fchrt gerade ein Selbstgespr\u00e4ch, w\u00e4gt logisch Argumente ab oder formuliert im Kopf S\u00e4tze vor.</p><p><strong>Wichtig:</strong> Dies ist kein Werkzeug zum \u201eL\u00fcgendetektor\u201c-Spielen! Die Gleichung \u201eKonstruieren = L\u00fcge\u201c ist ein fataler NLP-Mythos. Es geht einzig und allein darum, zu kalibrieren, in welchem Sinneskanal dein Gegen\u00fcber gerade unterwegs ist, um ihn dort mit deinen eigenen Worten (Pacing) perfekt abzuholen.</p>"
+        },
+        {
+          "id": "3.2.6",
+          "type": "quiz",
+          "title": "Zuordnungsaufgabe: Wohin geht der Blick?",
+          "content": "<p>Ordne die passenden Blickrichtungen den Szenarien zu (aus deiner Sicht).</p>",
+          "questions": [
+            {
+              "questionId": "q-3.2.6-a",
+              "questionType": "single_choice",
+              "questionText": "Dein Partner fragt sich still im Kopf logisch abw\u00e4gend: \u201eWas soll ich ihr jetzt blo\u00df antworten?\u201c (Innerer Dialog) \u2013 Wohin geht der Blick?",
+              "options": [
+                {"id": "unten-links", "text": "Nach unten links"},
+                {"id": "unten-rechts", "text": "Nach unten rechts"},
+                {"id": "oben-rechts", "text": "Nach oben rechts"}
+              ],
+              "correctMatch": ["unten-links"],
+              "explanation": "Richtig! Unten links steht f\u00fcr den inneren Dialog \u2013 das logische Abw\u00e4gen und Formulieren im Kopf."
+            },
+            {
+              "questionId": "q-3.2.6-b",
+              "questionType": "single_choice",
+              "questionText": "Dein Partner sp\u00fcrt emotional nach, wie traurig er nach dem letzten Streit war. (Kin\u00e4sthetisch) \u2013 Wohin geht der Blick?",
+              "options": [
+                {"id": "unten-links", "text": "Nach unten links"},
+                {"id": "unten-rechts", "text": "Nach unten rechts"},
+                {"id": "oben-links", "text": "Nach oben links"}
+              ],
+              "correctMatch": ["unten-rechts"],
+              "explanation": "Hervorragend! Unten rechts steht f\u00fcr Gef\u00fchle und k\u00f6rperliche Empfindungen. Du kannst nun die Augen als Kompass f\u00fcr deine Kommunikation nutzen."
+            }
+          ]
+        },
+        {
+          "id": "3.2.7",
+          "type": "info",
+          "title": "Zusammenfassung und Ausblick",
+          "content": "<p>Du hast heute gelernt, wie du die Gedankenstruktur deines Gegen\u00fcbers an seinen unbewussten Augenbewegungen ablesen kannst. Du wei\u00dft, dass Blicke <strong>nach oben</strong> f\u00fcr Bilder, <strong>zur Seite</strong> f\u00fcr T\u00f6ne und <strong>nach unten</strong> f\u00fcr Gef\u00fchle oder innere Dialoge stehen.</p><p>In der n\u00e4chsten und letzten Einheit dieses Moduls (3.3) bringen wir alles zusammen: Du lernst, wie du als Kommunikations-Dolmetscher zwischen den verschiedenen Sinneswelten \u00fcbersetzt und was passiert, wenn sich unsere Sinne pl\u00f6tzlich vermischen!</p>"
+        }
+      ]
     }
   ]
 }

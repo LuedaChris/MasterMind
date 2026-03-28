@@ -86,7 +86,7 @@
   var MODULE_CATALOG = [
     { file: 'data/module1.json', id: 'module-1', title: 'Modul 1: Fundamente und Grundannahmen des NLP', units: 5 },
     { file: 'data/module2.json', id: 'module-2', title: 'Modul 2: Sensorische Sch\u00e4rfe, Kalibrierung und Rapport', units: 5 },
-    { file: 'data/module3.json', id: 'module-3', title: 'Modul 3: Sinnessysteme und Repr\u00e4sentationskan\u00e4le (VAKOG)', units: 1 }
+    { file: 'data/module3.json', id: 'module-3', title: 'Modul 3: Sinnessysteme und Repr\u00e4sentationskan\u00e4le (VAKOG)', units: 2 }
   ];
 
   async function init() {
