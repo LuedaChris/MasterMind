@@ -197,6 +197,93 @@
           "content": "<p>Du hast heute gelernt, wie du die Gedankenstruktur deines Gegen\u00fcbers an seinen unbewussten Augenbewegungen ablesen kannst. Du wei\u00dft, dass Blicke <strong>nach oben</strong> f\u00fcr Bilder, <strong>zur Seite</strong> f\u00fcr T\u00f6ne und <strong>nach unten</strong> f\u00fcr Gef\u00fchle oder innere Dialoge stehen.</p><p>In der n\u00e4chsten und letzten Einheit dieses Moduls (3.3) bringen wir alles zusammen: Du lernst, wie du als Kommunikations-Dolmetscher zwischen den verschiedenen Sinneswelten \u00fcbersetzt und was passiert, wenn sich unsere Sinne pl\u00f6tzlich vermischen!</p>"
         }
       ]
+    },
+    {
+      "unitId": "3.3",
+      "unitTitle": "Micro-Unit 3.3 \u2013 \u00dcbersetzen zwischen den Welten: VAKOG im Alltag",
+      "screens": [
+        {
+          "id": "3.3.1",
+          "type": "info",
+          "title": "Das sensorische Mismatch",
+          "content": "<p>Willkommen zum gro\u00dfen Finale unseres VAKOG-Moduls! Du kennst nun die f\u00fcnf Sinneskan\u00e4le, wei\u00dft, wie man sie an der Wortwahl (Pr\u00e4dikate) erkennt und sogar an den Augen abliest. Jetzt machen wir dich zum <strong>Meister-Dolmetscher</strong> f\u00fcr den Alltag.</p><p>Erinnerst du dich an den Rapport-Bruch (Mismatch) aus Modul 2? Ein solcher Bruch passiert extrem oft rein sprachlich, weil zwei Menschen v\u00f6llig unbewusst in unterschiedlichen Sinneskan\u00e4len \u201esenden\u201c.</p><p>Stell dir vor, eine F\u00fchrungskraft (visuell) sagt: <em>\u201eIch sehe \u00fcberhaupt nicht, wo das hinf\u00fchren soll. Wir brauchen hier einen klaren Weitblick!\u201c</em> Der Mitarbeiter (kin\u00e4sthetisch) antwortet: <em>\u201eIch kann das Problem nicht greifen, mir fehlt einfach das Gesp\u00fcr f\u00fcr dieses Projekt.\u201c</em></p><p>Beide sprechen scheinbar dieselbe Sprache, aber neurologisch reden sie komplett aneinander vorbei! Die F\u00fchrungskraft fordert Bilder, der Mitarbeiter sucht nach einem Gef\u00fchl. Das Ergebnis? Frustration und das Gef\u00fchl, nicht verstanden zu werden.</p>"
+        },
+        {
+          "id": "3.3.2",
+          "type": "quiz",
+          "title": "Zuordnungsaufgabe: Finde den Fehler",
+          "content": "<p>Welches dieser Paare ist ein klassisches sensorisches Mismatch?</p>",
+          "questions": [
+            {
+              "questionId": "q-3.3.2-a",
+              "questionType": "single_choice",
+              "questionText": "Person A: \u201eDas klingt gut.\u201c / Person B: \u201eJa, da sind wir im Einklang.\u201c \u2013 UND \u2013 Person A: \u201eMir ist die Sache noch zu unklar.\u201c / Person B: \u201eDas ist wirklich eine harte Nuss.\u201c \u2013 Welches Paar ist ein Mismatch?",
+              "options": [
+                {"id": "paar1", "text": "Paar 1 (\u201eklingt gut\u201c / \u201eim Einklang\u201c)"},
+                {"id": "paar2", "text": "Paar 2 (\u201eunklar\u201c / \u201eharte Nuss\u201c)"}
+              ],
+              "correctMatch": ["paar2"],
+              "explanation": "Richtig! Person A spricht visuell (\u201eunklar\u201c), Person B antwortet kin\u00e4sthetisch (\u201eharte Nuss\u201c). Paar 1 ist ein perfekter auditiver Rapport!"
+            }
+          ]
+        },
+        {
+          "id": "3.3.3",
+          "type": "info",
+          "title": "Der Kommunikations-Dolmetscher",
+          "content": "<p>Die L\u00f6sung f\u00fcr dieses Problem ist das <strong>\u201e\u00dcbersetzen\u201c</strong>. Wenn du kalibriert hast, dass dein Gegen\u00fcber gerade stark in einem bestimmten Kanal unterwegs ist, verl\u00e4sst du dein eigenes bevorzugtes System und nutzt bewusst seine VAKOG-Pr\u00e4dikate.</p><p>Wenn der Mitarbeiter sagt: <em>\u201eIch kann das Problem nicht greifen\u201c</em>, sagt die clevere F\u00fchrungskraft nicht mehr \u201eLass es uns beleuchten\u201c, sondern sie \u00fcbersetzt ihre Botschaft ins Kin\u00e4sthetische: <em>\u201eLass uns das Fundament noch mal festigen, damit du einen sicheren Stand in dem Projekt hast.\u201c</em></p><p>Die Information ist genau dieselbe, aber sie wird so verpackt, dass das Gehirn des anderen sie sofort, m\u00fchelos und ohne inneren Widerstand verarbeiten kann.</p>"
+        },
+        {
+          "id": "3.3.4",
+          "type": "quiz",
+          "title": "Quiz: Erfolgreich \u00fcbersetzen",
+          "content": "<p>Deine Kundin sagt am Telefon: <em>\u201eDie Idee h\u00f6rt sich eigentlich ganz stimmig an, aber irgendetwas kratzt da noch.\u201c</em></p>",
+          "questions": [
+            {
+              "questionId": "q-3.3.4-a",
+              "questionType": "single_choice",
+              "questionText": "Wie \u00fcbersetzt du dein Angebot?",
+              "options": [
+                {"id": "a", "text": "\u201eIch zeige Ihnen noch mal das gro\u00dfe Ganze, dann wird es sonnenklar.\u201c"},
+                {"id": "b", "text": "\u201eLassen Sie uns noch mal reinh\u00f6ren, wo die Misst\u00f6ne liegen, damit wir alles in Einklang bringen.\u201c"},
+                {"id": "c", "text": "\u201eHaben Sie das Gef\u00fchl, wir bewegen uns in die falsche Richtung?\u201c"}
+              ],
+              "correctMatch": ["b"],
+              "explanation": "Exakt! Die Kundin sendet starke auditive Signale (\u201eh\u00f6rt sich an\u201c, \u201estimmig\u201c, \u201ekratzt\u201c). Du holst sie auf genau dieser Tonspur ab."
+            }
+          ]
+        },
+        {
+          "id": "3.3.5",
+          "type": "info",
+          "title": "Syn\u00e4sthesien \u2013 Wenn die Sinne verschmelzen",
+          "content": "<p>Manchmal ist die Welt nicht schwarz-wei\u00df. Im NLP sprechen wir von einer <strong>Syn\u00e4sthesie</strong>, wenn zwei Sinneskan\u00e4le in unserem Gehirn untrennbar miteinander verschmelzen (griechisch <em>syn</em> = zusammen, <em>aisthesis</em> = Empfindung).</p><p>Hast du schon einmal von einer \u201ekalten Farbe\u201c gesprochen? Oder von einer \u201ewarmen Stimme\u201c? Das sind Syn\u00e4sthesien! Ein visueller Reiz (Farbe) l\u00f6st sofort ein kin\u00e4sthetisches Gef\u00fchl (kalt) aus. Ein auditiver Reiz (Stimme) ist mit Temperatur (warm) verkn\u00fcpft.</p><p>Wenn dir auff\u00e4llt, dass jemand solche \u00dcberkreuzungen nutzt (z. B. \u201eDas sieht echt schwer aus\u201c), ist das ein riesiges Geschenk. Du kannst exakt dieselbe \u00dcberkreuzung nutzen, um maximalen Rapport aufzubauen (\u201eJa, da m\u00fcssen wir einen genaueren Blick auf die Traglast werfen\u201c).</p>"
+        },
+        {
+          "id": "3.3.6",
+          "type": "quiz",
+          "title": "Quiz: Syn\u00e4sthesien verstehen",
+          "questions": [
+            {
+              "questionId": "q-3.3.6-a",
+              "questionType": "single_choice",
+              "questionText": "Wahr oder Falsch? Eine Syn\u00e4sthesie beschreibt im NLP die F\u00e4higkeit, seine eigenen Sinne komplett abzuschalten.",
+              "options": [
+                {"id": "wahr", "text": "Wahr"},
+                {"id": "falsch", "text": "Falsch"}
+              ],
+              "correctMatch": ["falsch"],
+              "explanation": "Falsch! Eine Syn\u00e4sthesie ist die neurologische \u00dcberschneidung und gleichzeitige Verarbeitung von zwei Sinneskan\u00e4len, wie bei einem \u201eschrillen Hemd\u201c (H\u00f6ren + Sehen)."
+            }
+          ]
+        },
+        {
+          "id": "3.3.7",
+          "type": "info",
+          "title": "Zusammenfassung Modul 3",
+          "content": "<p><strong>Herzlichen Gl\u00fcckwunsch! Du hast Modul 3 gemeistert.</strong></p><p>Du wei\u00dft jetzt nicht nur, dass wir die Welt durch unsere f\u00fcnf VAKOG-Sinne filtern, sondern kannst diese Filter auch an <strong>W\u00f6rtern</strong> und <strong>Augenbewegungen</strong> erkennen \u2013 und als genialer Dolmetscher zwischen ihnen \u00fcbersetzen!</p><p>Damit hast du das perfekte R\u00fcstzeug f\u00fcr unser n\u00e4chstes gro\u00dfes Thema: In <strong>Modul 4</strong> kn\u00f6pfen wir uns die \u201eSubmodalit\u00e4ten\u201c vor. Dort lernst du, wie du wie an einem Mischpult die Lautst\u00e4rke, Helligkeit und Intensit\u00e4t deiner inneren Gedanken ver\u00e4ndern kannst!</p>"
+        }
+      ]
     }
   ]
 }
