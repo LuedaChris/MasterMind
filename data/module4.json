@@ -108,6 +108,117 @@
           ]
         }
       ]
+    },
+    {
+      "unitId": "4.2",
+      "unitTitle": "Micro-Unit 4.2 – Visuelle Submodalitäten: Führe Regie in deinem Kopf",
+      "screens": [
+        {
+          "id": "4.2.1",
+          "type": "info",
+          "title": "Die Parameter deines inneren Kinos",
+          "blocks": [
+            { "type": "text", "content": "In der letzten Einheit hast du gelernt, dass die Struktur unserer Gedanken (die Submodalitäten) unsere Gefühle bestimmt. Da die meisten Menschen im Alltag sehr stark visuell geprägt sind, schauen wir uns heute dein inneres Kino ganz genau an." },
+            { "type": "text", "content": "Denke an eine ganz einfache, angenehme Alltagssituation, zum Beispiel an deinen letzten Spaziergang in der Sonne. Wenn du dieses Bild vor deinem inneren Auge abrufst, hat es bestimmte visuelle Eigenschaften. Im NLP nennen wir das die Parameter der visuellen Modalität." },
+            { "type": "text", "content": "Achte einmal auf Folgendes:" },
+            { "type": "highlight", "content": "Entfernung und Größe: Ist das Bild direkt vor deiner Nase und riesengroß, oder ist es klein und weit weg?" },
+            { "type": "highlight", "content": "Farbe und Helligkeit: Ist die Erinnerung strahlend hell und farbenfroh, oder eher abgedunkelt und vielleicht sogar schwarz-weiß?" },
+            { "type": "highlight", "content": "Schärfe und Bewegung: Ist es ein gestochen scharfes Standbild (wie ein Foto) oder ein bewegter Film? Ist der Rand des Bildes scharf abgeschnitten oder verschwommen?" },
+            { "type": "text", "content": "Jedes innere Bild, das du hast, besitzt eine exakte Kombination dieser Einstellungen. Und das Faszinierende ist: Dein Gehirn nutzt genau diese Parameter, um zu entscheiden, wie stark es emotional auf dieses Bild reagieren soll!" }
+          ]
+        },
+        {
+          "id": "4.2.2",
+          "type": "quiz",
+          "title": "Visuelle Parameter erkennen",
+          "questions": [
+            {
+              "id": "4.2.2a",
+              "type": "single_choice",
+              "prompt": "\"Ich sehe die Szene gestochen scharf und sie läuft ab wie ein Film.\" – Diese Beschreibung betrifft welche visuellen Submodalitäten?",
+              "options": ["Entfernung und Größe", "Farbe und Helligkeit", "Schärfe und Bewegung"],
+              "correctMatch": [false, false, true],
+              "explanation": "Richtig! Schärfe und Bewegung (Standbild vs. Film) sind hier die beschriebenen visuellen Submodalitäten."
+            },
+            {
+              "id": "4.2.2b",
+              "type": "single_choice",
+              "prompt": "\"Das Bild hat einen leichten Sepia-Ton und wirkt irgendwie abgedunkelt.\" – Diese Beschreibung betrifft welche visuellen Submodalitäten?",
+              "options": ["Entfernung und Größe", "Farbe und Helligkeit", "Schärfe und Bewegung"],
+              "correctMatch": [false, true, false],
+              "explanation": "Genau! Sepia-Ton und Abdunklung betreffen Farbe und Helligkeit. Je genauer du diese Parameter bei dir selbst wahrnehmen kannst, desto leichter kannst du sie verändern."
+            }
+          ]
+        },
+        {
+          "id": "4.2.3",
+          "type": "info",
+          "title": "Größe und Entfernung manipulieren",
+          "blocks": [
+            { "type": "text", "content": "Lass uns ein Experiment machen. Eines der zuverlässigsten Muster im NLP ist:" },
+            { "type": "highlight", "content": "Bilder, die wir innerlich groß und nah machen, verstärken das Gefühl. Bilder, die wir klein und weit weg machen, schwächen das Gefühl ab." },
+            { "type": "text", "content": "Stell dir etwas vor, das dich leicht nervös macht (z. B. ein bevorstehendes, unangenehmes Gespräch). Wahrscheinlich ist das Bild in deinem Kopf relativ groß und ziemlich nah bei dir." },
+            { "type": "text", "content": "Nimm dieses Bild jetzt ganz bewusst und schiebe es in deiner Vorstellung zehn Meter von dir weg. Mache es so klein wie eine Briefmarke. Was passiert mit deinem Gefühl der Nervosität?" },
+            { "type": "highlight", "content": "Bei den allermeisten Menschen nimmt die emotionale Intensität sofort drastisch ab. Du nimmst dem Bild buchstäblich seine \"Größe\"!" }
+          ]
+        },
+        {
+          "id": "4.2.4",
+          "type": "quiz",
+          "title": "Der mentale Zoom",
+          "questions": [
+            {
+              "id": "4.2.4a",
+              "type": "single_choice",
+              "prompt": "Du liegst abends im Bett und kannst nicht einschlafen, weil dir ein peinlicher Fehler von der Arbeit riesengroß und bedrohlich vor dem inneren Auge schwebt. Was ist laut NLP eine effektive Strategie, um das Gefühl zu neutralisieren?",
+              "options": [
+                "Du versuchst, den Inhalt des Bildes krampfhaft zu vergessen.",
+                "Du nimmst das Bild, schrumpfst es auf die Größe einer Münze und schiebst es ans andere Ende des Raumes.",
+                "Du machst das Bild noch heller und größer, um dich abzuhärten."
+              ],
+              "correctMatch": [false, true, false],
+              "explanation": "Exakt! Indem du die visuellen Parameter \"Größe\" und \"Entfernung\" veränderst, signalisierst du deinem Nervensystem, dass die Bedrohung unbedeutend und weit weg ist. Das Gefühl flacht ab."
+            }
+          ]
+        },
+        {
+          "id": "4.2.5",
+          "type": "info",
+          "title": "Farbe und Helligkeit als Gefühlsregler",
+          "blocks": [
+            { "type": "text", "content": "Ein weiterer extrem starker Hebel sind Farbe und Helligkeit." },
+            { "type": "highlight", "content": "Leuchtende, bunte Farben und eine hohe Helligkeit machen Erfahrungen im Gehirn \"lebendig\" und emotional greifbar. Schwarz-Weiß und Dunkelheit hingegen wirken wie ein emotionaler Filter, der Erfahrungen neutralisiert." },
+            { "type": "text", "content": "Wenn du eine großartige, motivierende Erinnerung hast, die du verstärken möchtest: Dreh die Helligkeit auf! Mach die Farben leuchtend und satt. Das gute Gefühl wird sich sofort verdoppeln." },
+            { "type": "text", "content": "Wenn du eine alte, ärgerliche Erinnerung loswerden willst: Entziehe ihr die Farbe. Mach ein graues, trübes Schwarz-Weiß-Bild daraus und dimme das Licht herunter, bis du die Szene kaum noch erkennen kannst." },
+            { "type": "highlight", "content": "Du wirst merken, wie der Ärger förmlich aus der Erinnerung \"herausgewaschen\" wird." }
+          ]
+        },
+        {
+          "id": "4.2.6",
+          "type": "quiz",
+          "title": "Wahr oder Falsch?",
+          "questions": [
+            {
+              "id": "4.2.6a",
+              "type": "single_choice",
+              "prompt": "Wenn du eine sehr schöne Urlaubserinnerung in deinem Kopf absichtlich in ein graues, verschwommenes Schwarz-Weiß-Bild verwandelst, wird das positive Gefühl dazu trotzdem exakt gleich stark bleiben.",
+              "options": ["Wahr", "Falsch"],
+              "correctMatch": [false, true],
+              "explanation": "Falsch! Das Gehirn reagiert mechanisch auf die Submodalitäten. Wenn du die Farbe und Klarheit entfernst, wird auch das schöne Gefühl der Urlaubserinnerung deutlich schwächer und neutraler. Die Struktur steuert die Emotion!"
+            }
+          ]
+        },
+        {
+          "id": "4.2.7",
+          "type": "info",
+          "title": "Zusammenfassung und Ausblick",
+          "blocks": [
+            { "type": "text", "content": "Hervorragend! Du kannst nun dein inneres Mischpult bedienen und weißt, wie du durch das Verändern von Größe, Entfernung, Farbe und Helligkeit deine emotionalen Reaktionen steuern kannst." },
+            { "type": "highlight", "content": "Du bist nicht mehr das Opfer deiner inneren Bilder, sondern ihr Regisseur." },
+            { "type": "text", "content": "In der nächsten Einheit (4.3) lernen wir den wohl stärksten Hebel im NLP kennen, wenn es um Gefühle geht: den Unterschied, ob wir einen inneren Film durch unsere eigenen Augen sehen oder uns selbst auf der Leinwand beobachten (Assoziation vs. Dissoziation)!" }
+          ]
+        }
+      ]
     }
   ]
 }
