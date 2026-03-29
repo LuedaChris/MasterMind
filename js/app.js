@@ -87,7 +87,7 @@
     { file: 'data/module1.json', id: 'module-1', title: 'Modul 1: Fundamente und Grundannahmen des NLP', units: 5 },
     { file: 'data/module2.json', id: 'module-2', title: 'Modul 2: Sensorische Sch\u00e4rfe, Kalibrierung und Rapport', units: 5 },
     { file: 'data/module3.json', id: 'module-3', title: 'Modul 3: Sinnessysteme und Repr\u00e4sentationskan\u00e4le (VAKOG)', units: 3 },
-    { file: 'data/module4.json', id: 'module-4', title: 'Modul 4: Submodalit\u00e4ten und die Feinstruktur der Wahrnehmung', units: 2 }
+    { file: 'data/module4.json', id: 'module-4', title: 'Modul 4: Submodalit\u00e4ten und die Feinstruktur der Wahrnehmung', units: 3 }
   ];
 
   async function init() {

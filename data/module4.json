@@ -219,6 +219,108 @@
           ]
         }
       ]
+    },
+    {
+      "unitId": "4.3",
+      "unitTitle": "Micro-Unit 4.3 – Assoziation vs. Dissoziation: Der Wechsel der Perspektive",
+      "screens": [
+        {
+          "id": "4.3.1",
+          "type": "info",
+          "title": "Assoziiert – Mittendrin im Erleben",
+          "blocks": [
+            { "type": "text", "content": "In den letzten Einheiten haben wir gelernt, wie wir Eigenschaften wie Größe und Helligkeit unserer inneren Bilder verändern können. Heute schauen wir uns den absoluten \"Hauptschalter\" für unsere Gefühle an: die Perspektive, aus der wir eine Erinnerung oder Vorstellung in unserem Kopf erleben." },
+            { "type": "text", "content": "Erinnere dich an einen Moment, in dem du kürzlich herzhaft gelacht hast oder sehr glücklich warst. Wenn du diese Erinnerung jetzt abrufst: Siehst du die Szene durch deine eigenen Augen, so als wärst du wieder genau in diesem Moment? Spürst du das Lachen wieder in deinem eigenen Körper?" },
+            { "type": "highlight", "content": "Im NLP nennen wir diesen Zustand assoziiert. Du bist komplett mit der Erfahrung verbunden. Du siehst nicht dich selbst von außen, sondern du blickst aus deinem eigenen Körper heraus in die Welt." },
+            { "type": "highlight", "content": "Assoziation maximiert das Gefühl. Egal ob Freude, Motivation oder auch Angst – wenn du assoziiert bist, spürst du die Emotion in ihrer vollen Intensität." }
+          ]
+        },
+        {
+          "id": "4.3.2",
+          "type": "quiz",
+          "title": "Wahr oder Falsch?",
+          "questions": [
+            {
+              "id": "4.3.2a",
+              "type": "single_choice",
+              "prompt": "Wenn du in einer Erinnerung assoziiert bist, siehst du dich selbst wie einen Schauspieler auf einer Theaterbühne agieren.",
+              "options": ["Wahr", "Falsch"],
+              "correctMatch": [false, true],
+              "explanation": "Falsch! Wenn du assoziiert bist, siehst du die Welt durch deine eigenen Augen. Du siehst dich selbst nicht, sondern erlebst alles aus der Ich-Perspektive."
+            }
+          ]
+        },
+        {
+          "id": "4.3.3",
+          "type": "info",
+          "title": "Dissoziiert – Der neutrale Beobachter",
+          "blocks": [
+            { "type": "text", "content": "Nun ändere ganz bewusst die Perspektive. Stell dir vor, du schwebst aus deinem Körper heraus und setzt dich in einen bequemen Kinosessel. Auf der Leinwand vor dir siehst du dich selbst in exakt der gleichen Situation, in der du eben noch gelacht hast." },
+            { "type": "text", "content": "Du siehst deinen eigenen Hinterkopf, deine Gestik oder dein Gesicht." },
+            { "type": "highlight", "content": "Diesen Zustand nennen wir dissoziiert. Du bist abgetrennt vom unmittelbaren Erleben und nimmst die Rolle eines neutralen Beobachters ein." },
+            { "type": "highlight", "content": "Dissoziation minimiert das Gefühl. Du fühlst nicht mehr die direkte, körperliche Emotion der Situation, sondern hast eine analytische, emotionale Distanz zum Geschehen aufgebaut." }
+          ]
+        },
+        {
+          "id": "4.3.4",
+          "type": "quiz",
+          "title": "Welche Perspektive ist das?",
+          "questions": [
+            {
+              "id": "4.3.4a",
+              "type": "single_choice",
+              "prompt": "Du denkst an ein unangenehmes Meeting von gestern. In deinem Kopf siehst du, wie du selbst am Konferenztisch sitzt, nervös mit dem Stift spielst und wie dein Chef dich ansieht. Welchen Zustand beschreibt das?",
+              "options": ["Assoziiert", "Dissoziiert", "Halluziniert"],
+              "correctMatch": [false, true, false],
+              "explanation": "Richtig! Da du dich selbst am Tisch sitzen siehst, betrachtest du die Szene von außen. Du bist dissoziiert."
+            }
+          ]
+        },
+        {
+          "id": "4.3.5",
+          "type": "info",
+          "title": "Den Schalter bewusst nutzen",
+          "blocks": [
+            { "type": "text", "content": "Warum ist dieser Unterschied so wichtig? Weil er dir die absolute Kontrolle über deine emotionalen Reaktionen gibt!" },
+            { "type": "text", "content": "Die meisten Menschen machen es im Alltag unbewusst genau falsch herum: Sie sind in negative, stressige Erinnerungen stark assoziiert (und leiden jedes Mal wieder voll mit) und betrachten ihre schönsten, stolzesten Momente oft dissoziiert von außen (und berauben sich so der tollen Gefühle)." },
+            { "type": "highlight", "content": "Ab heute kannst du den Spieß umdrehen:" },
+            { "type": "highlight", "content": "Positive Erlebnisse assoziieren: Willst du Motivation, Freude oder Selbstbewusstsein spüren? Schlüpfe in deinen Körper (assoziiert), sieh durch deine eigenen Augen und mach die Gefühle groß!" },
+            { "type": "highlight", "content": "Negative Erlebnisse dissoziieren: Macht dir etwas Angst oder ärgert dich eine Erinnerung? Tritt geistig einen Schritt zurück. Betrachte dich selbst von außen auf einer Leinwand (dissoziiert). Das starke, unangenehme Gefühl wird sofort verfliegen." }
+          ]
+        },
+        {
+          "id": "4.3.6",
+          "type": "quiz",
+          "title": "Die richtige Strategie",
+          "questions": [
+            {
+              "id": "4.3.6a",
+              "type": "single_choice",
+              "prompt": "Du hast einen großen Erfolg gefeiert und möchtest dieses tolle Gefühl als Energiequelle für den Tag nutzen. Welche mentale Strategie wendest du an?",
+              "options": ["Assoziieren (durch die eigenen Augen sehen)", "Dissoziieren (sich von außen betrachten)"],
+              "correctMatch": [true, false],
+              "explanation": "Genau! Durch Assoziieren maximierst du das positive Gefühl – du schlüpfst in den Moment und erlebst ihn in voller Intensität."
+            },
+            {
+              "id": "4.3.6b",
+              "type": "single_choice",
+              "prompt": "Du hast einen peinlichen Fehler gemacht und ärgerst dich jedes Mal maßlos, wenn du daran denkst. Welche mentale Strategie wendest du an?",
+              "options": ["Assoziieren (durch die eigenen Augen sehen)", "Dissoziieren (sich von außen betrachten)"],
+              "correctMatch": [false, true],
+              "explanation": "Hervorragend! Durch Dissoziieren stoppst du die negative Emotion – du betrachtest dich von außen und gewinnst analytische Distanz. Du hast den \"Hauptschalter\" der Emotionen verstanden!"
+            }
+          ]
+        },
+        {
+          "id": "4.3.7",
+          "type": "info",
+          "title": "Zusammenfassung und Ausblick",
+          "blocks": [
+            { "type": "text", "content": "Du kennst nun den massiven Unterschied zwischen Assoziation (in sich sein, Gefühle maximieren) und Dissoziation (sich von außen sehen, Gefühle neutralisieren)." },
+            { "type": "text", "content": "In der nächsten Einheit (4.4) werden wir all diese Submodalitäten wie ein Detektiv untersuchen: Du lernst die \"Kontrastanalyse\" kennen, mit der wir eine positive und eine negative Erfahrung systematisch vergleichen!" }
+          ]
+        }
+      ]
     }
   ]
 }
