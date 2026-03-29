@@ -1,0 +1,113 @@
+{
+  "moduleId": "module-4",
+  "title": "Submodalitäten und die Feinstruktur der Wahrnehmung",
+  "description": "Du tauchst eine Ebene tiefer in dein Gehirn ein und entdeckst das 'Mischpult', mit dem du deine Gefühle steuern kannst.",
+  "units": [
+    {
+      "unitId": "4.1",
+      "unitTitle": "Micro-Unit 4.1 – Die Architektur der Submodalitäten: Die Moleküle der Erfahrung",
+      "screens": [
+        {
+          "id": "4.1.1",
+          "type": "info",
+          "title": "Was sind Submodalitäten?",
+          "blocks": [
+            { "type": "text", "content": "In Modul 3 haben wir unsere fünf VAKOG-Sinne (Sehen, Hören, Fühlen, Riechen, Schmecken) kennengelernt. Sie sind die großen Bausteine unserer Wahrnehmung. Heute tauchen wir noch eine Ebene tiefer ein und entdecken das \"Mischpult\", mit dem du deine Gefühle steuern kannst." },
+            { "type": "text", "content": "Wenn die VAKOG-Sinne die grundlegenden Elemente unserer Erfahrung sind, dann sind die Submodalitäten die feinen Moleküle, aus denen diese Elemente bestehen." },
+            { "type": "text", "content": "Stell dir deinen Verstand wie einen Fernseher vor: Dass du überhaupt ein Bild siehst (der visuelle Kanal), ist die Modalität. Aber ob dieses Bild hell oder dunkel, bunt oder schwarz-weiß, groß oder klein ist – das sind die Submodalitäten! Sie sind die feinen Einstellungsregler deiner Wahrnehmung." },
+            { "type": "highlight", "content": "Jeder Mensch codiert seine Erinnerungen und Gedanken mit ganz spezifischen Einstellungen auf diesem inneren Mischpult." }
+          ]
+        },
+        {
+          "id": "4.1.2",
+          "type": "quiz",
+          "title": "Zuordnungsaufgabe: Modalität oder Submodalität?",
+          "questions": [
+            {
+              "id": "4.1.2a",
+              "type": "single_choice",
+              "prompt": "\"Ich erinnere mich an den Strandurlaub in Form eines inneren Bildes.\" – Diese Aussage beschreibt …",
+              "options": ["eine Modalität (Visuell)", "eine Submodalität"],
+              "correctMatch": [true, false],
+              "explanation": "Richtig! Das innere Bild an sich beschreibt den visuellen Kanal – also die Modalität."
+            },
+            {
+              "id": "4.1.2b",
+              "type": "single_choice",
+              "prompt": "\"Mein inneres Bild vom Strandurlaub ist extrem farbintensiv und panoramaartig breit.\" – Diese Aussage beschreibt …",
+              "options": ["eine Modalität", "Submodalitäten (Farbe, Breite)"],
+              "correctMatch": [false, true],
+              "explanation": "Genau! Farbintensität und Breite sind Submodalitäten – die feinen Einstellungsregler innerhalb des visuellen Kanals. Diese Unterscheidung ist der erste Schritt zur mentalen Kontrolle."
+            }
+          ]
+        },
+        {
+          "id": "4.1.3",
+          "type": "info",
+          "title": "Die feinen Unterschiede",
+          "blocks": [
+            { "type": "text", "content": "Jeder unserer Sinne besitzt solche feinen \"Einstellungsregler\". Wenn wir lernen, darauf zu achten, entdecken wir eine völlig neue Welt der Selbstwahrnehmung:" },
+            { "type": "highlight", "content": "Visuelle Submodalitäten: Ist das innere Bild dreidimensional oder flach wie ein Foto? Ist es scharf oder verschwommen? Bewegt es sich wie ein Film oder ist es ein Standbild?" },
+            { "type": "highlight", "content": "Auditive Submodalitäten: Wenn du eine innere Stimme hörst, wie hoch oder tief ist sie? Ist sie laut oder flüsterleise? Kommt der Klang eher von links, von rechts oder von innen?" },
+            { "type": "highlight", "content": "Kinästhetische Submodalitäten: Wo genau in deinem Körper spürst du ein Gefühl? Ist es warm oder kalt? Ist es ein schwerer Druck oder ein leichtes Kribbeln? Bewegt es sich?" }
+          ]
+        },
+        {
+          "id": "4.1.4",
+          "type": "quiz",
+          "title": "Finde die Submodalität",
+          "questions": [
+            {
+              "id": "4.1.4a",
+              "type": "single_choice",
+              "prompt": "Welche der folgenden Beschreibungen ist ein Beispiel für eine auditive Submodalität?",
+              "options": [
+                "\"Ich habe das Gefühl, dass mir diese Aufgabe schwer im Magen liegt.\"",
+                "\"Die Stimme meines alten Lehrers in meinem Kopf spricht extrem langsam und hallt ein bisschen.\"",
+                "\"Ich sehe die Lösung direkt vor meinem inneren Auge.\""
+              ],
+              "correctMatch": [false, true, false],
+              "explanation": "Richtig! Tempo und Hall sind klassische auditive Submodalitäten, also Eigenschaften des Gehörten."
+            }
+          ]
+        },
+        {
+          "id": "4.1.5",
+          "type": "info",
+          "title": "Struktur dominiert Inhalt",
+          "blocks": [
+            { "type": "text", "content": "Jetzt kommt das eigentliche Geheimnis dieses Moduls: Im NLP gilt der fundamentale Grundsatz \"Struktur dominiert Inhalt\"." },
+            { "type": "highlight", "content": "Das bedeutet: Wie du über etwas denkst (die Struktur/Submodalitäten), bestimmt deine emotionale Reaktion oft viel stärker als das, worüber du denkst (der Inhalt)." },
+            { "type": "text", "content": "Ein Beispiel: Stell dir eine unangenehme Aufgabe vor, die du vor dir herschiebst (Inhalt). Wahrscheinlich ist dein inneres Bild davon sehr groß, nah und dunkel (Struktur)." },
+            { "type": "text", "content": "Wenn du nun den Inhalt gleich lässt (es bleibt dieselbe Aufgabe), aber die Struktur in deinem Kopf veränderst – mach das Bild absichtlich winzig klein, schwarz-weiß und schiebe es in deiner Vorstellung 20 Meter weit weg – verändert sich sofort dein Gefühl dazu!" },
+            { "type": "highlight", "content": "Die Aufgabe wirkt plötzlich viel weniger bedrohlich. Du bist dem Inhalt deiner Gedanken nicht ausgeliefert; du kannst die Struktur verändern!" }
+          ]
+        },
+        {
+          "id": "4.1.6",
+          "type": "quiz",
+          "title": "Wahr oder Falsch?",
+          "questions": [
+            {
+              "id": "4.1.6a",
+              "type": "single_choice",
+              "prompt": "Der Leitsatz \"Struktur dominiert Inhalt\" bedeutet, dass wir unangenehme Erlebnisse inhaltlich komplett vergessen müssen, damit es uns wieder gut geht.",
+              "options": ["Wahr", "Falsch"],
+              "correctMatch": [false, true],
+              "explanation": "Falsch! Wir müssen den Inhalt nicht vergessen oder verdrängen. Wir verändern lediglich das \"Wie\" (die Struktur/die Submodalitäten) der Erinnerung in unserem Kopf, um unsere emotionale Reaktion darauf sofort und dauerhaft zu verbessern."
+            }
+          ]
+        },
+        {
+          "id": "4.1.7",
+          "type": "info",
+          "title": "Zusammenfassung und Ausblick",
+          "blocks": [
+            { "type": "text", "content": "Du hast soeben die Moleküle deiner Erfahrung kennengelernt und verstanden, dass die Struktur deiner Gedanken deine Gefühle bestimmt." },
+            { "type": "text", "content": "In der nächsten Einheit (4.2) werden wir extrem praktisch: Wir nehmen uns gezielt die visuellen Parameter vor und du lernst, wie du Helligkeit, Größe und Entfernung deiner inneren Bilder bewusst manipulieren kannst!" }
+          ]
+        }
+      ]
+    }
+  ]
+}
